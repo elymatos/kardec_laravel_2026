@@ -1,0 +1,80 @@
+<?php
+
+return [
+    'db' => env('DB_CONNECTION', 'fnbr'),
+    'lang' => 1,
+    'language' => 'pt',
+    'defaultIdLanguage' => 1,
+    'defaultPassword' => 'default',
+    'pageTitle' => 'Projeto Allan Kardec',
+    'mainTitle' => 'Projeto Allan Kardec',
+    'headerTitle' => 'Projeto Allan Kardec',
+    'footer' => '&copy; 2020-2024 UFJF.',
+    'login' => [
+        'handler' => env('APP_AUTH'),
+        'AUTH0_CLIENT_ID' => env('AUTH0_CLIENT_ID'),
+        'AUTH0_CLIENT_SECRET' => env('AUTH0_CLIENT_SECRET'),
+        'AUTH0_COOKIE_SECRET' => env('AUTH0_COOKIE_SECRET'),
+        'AUTH0_DOMAIN' => env('AUTH0_DOMAIN'),
+        'AUTH0_CALLBACK_URL' => env('AUTH0_CALLBACK_URL'),
+        'AUTH0_BASE_URL' => env('AUTH0_BASE_URL'),
+    ],
+    'actions' => [
+        'pt' => [
+            'inicio' => ['Início', '/', '', []],
+            'projeto' => ['O Projeto', '', '', [
+                'apresentacao' => ['Apresentação', '/apresentacao', '', []],
+                'acervos' => ['Acervos', '/acervos', '', []],
+                'politicaeditorial' => ['Política Editorial', '/politicaeditorial', '', []],
+                'equipe' => ['Equipe', '/equipe', '', []],
+                'condicoesdeuso' => ['Condições de uso', '/condicoesdeuso', '', []],
+            ]],
+            'acesso' => ['Acesso rápido', '', '', [
+                'recentes' => ['Publicações recentes', '/acesso/recente', '', []],
+                'ano' => ['Ano do documento', '/acesso/ano', '', []],
+                'categoria' => ['Categoria', '/acesso/categoria', '', []],
+                'acervo' => ['Acervo', '/acesso/acervo', '', []],
+                'id' => ['Identificador', '/acesso/id', '', []],
+            ]],
+            'pesquisar' => ['Pesquisar', '/pesquisar', '', []],
+            'imagens' => ['Imagens', '/imagens', '', []],
+            'timeline' => ['Timeline', '/timeline', '', []],
+            'biografias' => ['Biografias', '/biografias', '', []],
+            'bibliografia' => ['Bibliografia', '/bibliografia', '', []],
+            'contato' => ['Contato', '/contato', '', []],
+        ],
+        'fr' => [
+            'inicio' => ['Accueil', '/', '', []],
+            'projeto' => ['Le Projet', '', '', [
+                'apresentacao' => ['Présentation', '/apresentacao', '', []],
+                'acervos' => ['Colléctions', '/acervos', '', []],
+                'politicaeditorial' => ['Règles Éditoriales', '/politicaeditorial', '', []],
+                'equipe' => ['Équipe', '/equipe', '', []],
+                'condicoesdeuso' => ['Conditions d\'utilisation', '/condicoesdeuso', '', []],
+            ]],
+            'acesso' => ['Accès rapide', '', '', [
+                'recentes' => ['Parutions récents', '/acesso/recente', '', []],
+                'ano' => ['Année de document', '/acesso/ano', '', []],
+                'categoria' => ['Catégorie', '/acesso/categoria', '', []],
+                'acervo' => ['Collection', '/acesso/acervo', '', []],
+                'id' => ['Identifier', '/acesso/id', '', []],
+            ]],
+            'pesquisar' => ['Rechercher', '/pesquisar', '', []],
+            'imagens' => ['Images', '/imagens', '', []],
+            'timeline' => ['Timeline', '/timeline', '', []],
+            'biografias' => ['Biographies', '/biografias', '', []],
+            'bibliografia' => ['Bibliographies', '/bibliografia', '', []],
+            'contato' => ['Contact', '/contato', '', []],
+        ],
+    ],
+    'user' => ['userPanel', '', '', [
+        'language' => ['Language', '/language', '', [
+            '1' => ['Português', '/changeLanguage/pt', '', []],
+            '2' => ['Français', '/changeLanguage/fr', '', []],
+        ]],
+        'profile' => ['Profile', '/profile', '', [
+            'myprofile' => ['My Profile', '/profile', '', []],
+            'logout' => ['Logout', '/logout', '', []],
+        ]],
+    ]],
+];

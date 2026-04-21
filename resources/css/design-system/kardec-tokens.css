@@ -1,0 +1,222 @@
+/* =============================================================================
+   KARDEC DESIGN SYSTEM — TOKENS
+   Version 1.0 · Projeto Allan Kardec · UFJF
+   =============================================================================
+
+   This file defines all design tokens as CSS custom properties.
+   Import this file first. Never hard-code values in component CSS —
+   always reference these tokens so the entire system can be rethemed
+   by changing values here alone.
+
+   Table of Contents:
+     1. Color Palette
+     2. Semantic Color Roles
+     3. Typography
+     4. Spacing Scale
+     5. Border Radius
+     6. Shadows
+     7. Motion
+     8. Layout
+   ============================================================================= */
+
+
+/* =============================================================================
+   1. COLOR PALETTE — Raw color values (use semantic roles below in components)
+   ============================================================================= */
+:root {
+  /* Ink family — deep navy/charcoal base */
+  --color-ink-900: #0f1016;
+  --color-ink-800: #1a1c24;   /* --ink: primary dark surface */
+  --color-ink-700: #22253a;
+  --color-ink-600: #2e3245;   /* --ink-mid */
+  --color-ink-500: #3d4260;
+  --color-ink-400: #555b7a;
+
+  /* Parchment family — warm off-white */
+  --color-parchment-100: #faf8f3;  /* --cream: page background */
+  --color-parchment-200: #f5f0e6;  /* --parchment: card background */
+  --color-parchment-300: #ede5d0;
+  --color-parchment-400: #d9ccb0;
+
+  /* Gold family — primary accent */
+  --color-gold-300: #e8c97a;
+  --color-gold-400: #d4a94a;  /* --gold-light */
+  --color-gold-500: #b8892a;  /* --gold: primary accent */
+  --color-gold-600: #9a7020;
+  --color-gold-700: #7a5c1e;  /* --sepia */
+  --color-gold-800: #5c4316;
+
+  /* Rust — secondary accent */
+  --color-rust-400: #b05a40;
+  --color-rust-500: #7d3b2a;  /* --rust */
+  --color-rust-600: #5c2a1c;
+
+  /* Neutral */
+  --color-neutral-500: #8a8070;  /* --muted */
+  --color-neutral-400: #a89880;
+  --color-neutral-300: #c8b89a;
+}
+
+
+/* =============================================================================
+   2. SEMANTIC COLOR ROLES — What each color is FOR
+   ============================================================================= */
+:root {
+  /* Surfaces */
+  --surface-page:       var(--color-parchment-100);   /* body background */
+  --surface-card:       var(--color-parchment-200);   /* card / panel */
+  --surface-dark:       var(--color-ink-800);         /* dark sections */
+  --surface-dark-mid:   var(--color-ink-600);         /* secondary dark */
+  --surface-overlay:    rgba(26, 28, 36, 0.97);       /* nav / modals */
+
+  /* Text */
+  --text-primary:       var(--color-ink-800);         /* headings, body */
+  --text-secondary:     rgba(26, 28, 36, 0.8);        /* body on light bg */
+  --text-muted:         var(--color-neutral-500);     /* captions, meta */
+  --text-on-dark:       var(--color-parchment-200);   /* text on dark bg */
+  --text-on-dark-muted: rgba(245, 240, 230, 0.55);    /* muted on dark */
+  --text-accent:        var(--color-gold-500);        /* accent labels */
+  --text-accent-light:  var(--color-gold-400);        /* lighter accent */
+  --text-sepia:         var(--color-gold-700);        /* category / italic labels */
+
+  /* Borders */
+  --border-default:     rgba(184, 137, 42, 0.22);     /* standard card border */
+  --border-strong:      rgba(184, 137, 42, 0.45);     /* hover / focus state */
+  --border-dark:        rgba(184, 137, 42, 0.14);     /* border on dark surface */
+  --border-subtle:      rgba(26, 28, 36, 0.12);       /* subtle on light bg */
+
+  /* Interactive */
+  --color-focus-ring:   rgba(184, 137, 42, 0.35);
+  --color-hover-bg:     rgba(184, 137, 42, 0.08);
+  --color-hover-bg-dark:rgba(245, 240, 230, 0.06);
+}
+
+
+/* =============================================================================
+   3. TYPOGRAPHY
+   ============================================================================= */
+:root {
+  /* Font families */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body:    'Spectral', Georgia, 'Times New Roman', serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+
+  /* Font sizes — fluid scale using clamp() */
+  --text-xs:   0.7rem;     /* 11.2px — tiny labels */
+  --text-sm:   0.8rem;     /* 12.8px — nav links, badges */
+  --text-base: 1rem;       /* 16px   — body */
+  --text-md:   1.125rem;   /* 18px   — lead body */
+  --text-lg:   1.35rem;    /* 21.6px — lead text */
+  --text-xl:   1.6rem;     /* 25.6px — small headings */
+  --text-2xl:  2.1rem;     /* 33.6px — section headings */
+  --text-3xl:  clamp(1.8rem, 4vw,  2.75rem);  /* section headings fluid */
+  --text-4xl:  clamp(2.4rem, 7vw,  5rem);     /* hero heading fluid */
+
+  /* Line heights */
+  --leading-tight:  1.1;
+  --leading-snug:   1.18;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.72;
+  --leading-loose:  1.85;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;
+  --tracking-wider:  0.1em;
+  --tracking-widest: 0.2em;
+
+  /* Font weights */
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+}
+
+
+/* =============================================================================
+   4. SPACING SCALE — 4px base unit
+   ============================================================================= */
+:root {
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* Section padding — fluid */
+  --section-py: clamp(4rem, 8vw, 8rem);
+  --section-px: clamp(1rem, 5vw, 3rem);
+
+  /* Container */
+  --container-max: 1200px;
+  --container-narrow: 780px;
+}
+
+
+/* =============================================================================
+   5. BORDER RADIUS
+   ============================================================================= */
+:root {
+  --radius-sm:   3px;
+  --radius-md:   6px;   /* default card radius (--r) */
+  --radius-lg:   12px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+}
+
+
+/* =============================================================================
+   6. SHADOWS
+   ============================================================================= */
+:root {
+  --shadow-sm:  0 2px 8px  rgba(26, 28, 36, 0.1);
+  --shadow-md:  0 4px 32px rgba(26, 28, 36, 0.18);  /* default (--shadow) */
+  --shadow-lg:  0 8px 48px rgba(26, 28, 36, 0.25);
+  --shadow-xl:  0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-glow:0 6px 24px rgba(26, 28, 36, 0.1);
+  --shadow-focus: 0 0 0 4px rgba(184, 137, 42, 0.12), 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =============================================================================
+   7. MOTION
+   ============================================================================= */
+:root {
+  --transition-fast:   0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:   0.3s  cubic-bezier(0.4, 0, 0.2, 1);  /* --transition */
+  --transition-slow:   0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.4s  cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-base:   300ms;
+  --duration-slow:   500ms;
+  --duration-reveal: 700ms;
+
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+/* =============================================================================
+   8. LAYOUT
+   ============================================================================= */
+:root {
+  --nav-height: 64px;
+  --mobile-nav-height: 60px;
+  --z-base:     1;
+  --z-dropdown: 50;
+  --z-sticky:   99;
+  --z-nav:      100;
+  --z-modal:    200;
+  --z-toast:    300;
+}

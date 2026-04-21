@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd"
+           version="4.3.6"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 https://www.crossref.org/schemas/crossref4.3.6.xsd">
+    <head>
+        <doi_batch_id>_1725472733</doi_batch_id>
+        <timestamp>1725472733</timestamp>
+        <depositor>
+            <depositor_name>Adriana</depositor_name>
+            <email_address>adriana.oliveira@ufjf.edu.br</email_address>
+        </depositor>
+        <registrant>UFJF</registrant>
+    </head>
+    <body>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Rascunho de carta para o senhor Pâtier</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00030</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=30</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Rascunho de carta para o senhor Tiedman</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00031</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=31</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Prece - 1857 [1]</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00032</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=32</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Carta para o senhor chefe de polícia</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00033</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=33</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Prece - 1857 [4]</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00034</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=34</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Rascunho de carta para o senhor Gassier</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00035</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=35</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Rascunho de carta para o Doutor Francisco Antônio Pereira Rocha</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00036</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=36</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Evocação</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00037</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=37</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Prece</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00038</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=38</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+        <journal>
+            <journal_metadata>
+                <full_title>Projeto Allan Kardec</full_title>
+                <abbrev_title>Projeto Allan Kardec</abbrev_title>
+                <issn media_type="electronic">2675-4126</issn>
+            </journal_metadata>
+            <journal_issue>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+            </journal_issue>
+            <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1"
+                             xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text"
+                             metadata_distribution_opts="any">
+                <titles>
+                    <title>Evocação</title>
+                </titles>
+                <contributors>
+                    <person_name contributor_role="editor" sequence="first" language="pt">
+                        <given_name>Brutus</given_name>
+                        <surname>Abel</surname>
+                    </person_name>
+                </contributors>
+                <publication_date media_type="online">
+                    <month>09</month>
+                    <day>01</day>
+                    <year>2020</year>
+                </publication_date>
+                <doi_data>
+                    <doi>10.34019/ufjf.PKardec.00039</doi>
+                    <resource>https://projetokardec.ufjf.br/item-pt?id=39</resource>
+                </doi_data>
+            </journal_article>
+        </journal>
+    </body>
+</doi_batch>

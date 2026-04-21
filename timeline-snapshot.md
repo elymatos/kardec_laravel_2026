@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5] [cursor=pointer]: 
+        - link "Projeto Allan Kardec" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e8]:
+        - generic [ref=e10] [cursor=pointer]: translate
+        - link "Login" [ref=e11] [cursor=pointer]:
+          - /url: /auth0Login
+          - text: Login
+  - main [ref=e15]:
+    - heading "Timeline" [level=1] [ref=e18]
+    - generic [ref=e21]:
+      - generic [ref=e24]:
+        - text: "Instruções:"
+        - text: "- Clique e arraste sobre o painel para fazer zoom em um período."
+        - text: "- Clique em um segmento para abrir o documento em nova aba."
+      - generic [ref=e25]:
+        - generic [ref=e28]:
+          - generic [ref=e31]:
+            - generic [ref=e33] [cursor=pointer]: Todos 
+            - generic [ref=e37] [cursor=pointer]: Carta 
+            - generic [ref=e41] [cursor=pointer]: Comunicação 
+            - generic [ref=e45] [cursor=pointer]: Cópia de carta 
+            - generic [ref=e49] [cursor=pointer]: Discurso 
+            - generic [ref=e53] [cursor=pointer]: Dissertação 
+            - generic [ref=e57] [cursor=pointer]: Escritura 
+            - generic [ref=e61] [cursor=pointer]: Evocação 
+            - generic [ref=e65] [cursor=pointer]: Fragmento 
+            - generic [ref=e69] [cursor=pointer]: Inventário 
+            - generic [ref=e73] [cursor=pointer]: Nota 
+            - generic [ref=e77] [cursor=pointer]: Prece 
+            - generic [ref=e81] [cursor=pointer]: Prova de página 
+            - generic [ref=e85] [cursor=pointer]: Psicografia 
+            - generic [ref=e89] [cursor=pointer]: Rascunho de carta 
+            - generic [ref=e93] [cursor=pointer]: Allan Kardec 
+          - button "Atualizar timeline" [ref=e95] [cursor=pointer]
+        - generic [ref=e97]:
+          - img [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - generic [ref=e103]: "1810"
+                - generic [ref=e105]: "1820"
+                - generic [ref=e107]: "1830"
+                - generic [ref=e109]: "1840"
+                - generic [ref=e111]: "1850"
+                - generic [ref=e113]: "1860"
+                - generic [ref=e115]: "1870"
+              - generic [ref=e118]:
+                - generic [ref=e120]: Carta
+                - generic [ref=e122]: Comunicação
+                - generic [ref=e124]: Cópia de...arta
+                - generic [ref=e126]: Discurso
+                - generic [ref=e128]: Dissertação
+                - generic [ref=e130]: Escritura
+                - generic [ref=e132]: Evocação
+                - generic [ref=e134]: Fragmento
+                - generic [ref=e136]: Inventário
+                - generic [ref=e138]: Nota
+                - generic [ref=e140]: Prece
+                - generic [ref=e142]: Prova de...gina
+                - generic [ref=e144]: Psicografia
+                - generic [ref=e146]: Rascunho...arta
+                - generic [ref=e148]: Allan Kardec
+              - generic [ref=e149]:
+                - generic [ref=e151]: Manuscritos
+                - generic [ref=e153]: Obras
+            - generic [ref=e154]:
+              - generic "Clique e arraste para Zoom" [ref=e155]
+              - generic "Clique e arraste para Zoom" [ref=e156]
+            - generic [ref=e383] [cursor=pointer]: Remover Zoom
+          - img [ref=e385]:
+            - generic [ref=e390]:
+              - generic [ref=e392]: "1800"
+              - generic [ref=e394]: "1810"
+              - generic [ref=e396]: "1820"
+              - generic [ref=e398]: "1830"
+              - generic [ref=e400]: "1840"
+              - generic [ref=e402]: "1850"
+              - generic [ref=e404]: "1860"
+              - generic [ref=e406]: "1870"
+              - generic [ref=e408]: "1880"
+    - generic [ref=e414]:
+      - link "Universidade Federal de Juiz de Fora" [ref=e415] [cursor=pointer]:
+        - /url: http://ufjf.br/
+        - img [ref=e416]
+      - link "Núcleo de Pesquisa em Espiritualidade e Saúde - UFJF" [ref=e417] [cursor=pointer]:
+        - /url: https://www.ufjf.br/nupes/
+        - img [ref=e418]
+      - link "Fundação Espírita André Luiz" [ref=e419] [cursor=pointer]:
+        - /url: https://feal.com.br/
+        - img [ref=e420]
+      - link "Museu Allan Kardec Online" [ref=e421] [cursor=pointer]:
+        - /url: https://www.allankardec.online/
+        - img [ref=e422]

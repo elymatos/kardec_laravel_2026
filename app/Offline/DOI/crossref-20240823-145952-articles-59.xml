@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" version="4.3.6" xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 https://www.crossref.org/schemas/crossref4.3.6.xsd">
+  <head>
+    <doi_batch_id>_1724425192</doi_batch_id>
+    <timestamp>1724425192</timestamp>
+    <depositor>
+      <depositor_name>Adriana</depositor_name>
+      <email_address>adriana.oliveira@ufjf.edu.br</email_address>
+    </depositor>
+    <registrant>UFJF</registrant>
+  </head>
+  <body>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Editorial</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Liamara</given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Priscila de Faria</given_name>
+            <surname>Pinto</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Lynx - Editorial do v. 3, 2023: Fluxo contínuo</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>14</day>
+          <year>2024</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45600</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45600</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>influências do uso excessivo das tecnologias na infância e na adolescência</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Mariana Elisa </given_name>
+            <surname>Faustino</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Carla da Conceição de</given_name>
+            <surname> Lima</surname>
+            <alt-name>
+              <name language="en">
+                <surname>Da Conceição de Lima</surname>
+                <given_name>Carla</given_name>
+              </name>
+            </alt-name>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>
+
+
+Este artigo faz um recorte do Trabalho de Conclusão de Curso (TCC) intitulado As influências do uso excessivo das tecnologias na infância e na adolescência apresentado no Curso de Licenciatura em Pedagogia da Universidade Federal dos Vales do Jequitinhonha e Mucuri no ano de 2024. O objetivo deste artigo é investigar em que medida as considerações apresentadas por Michel Desmurget se enquadram no contexto brasileiro, especificamente em relação ao acesso e uso da tecnologia. Trata-se de uma pesquisa com abordagem metodológica qualitativa, que utilizou como instrumento a análise documental, especificamente os relatórios das pesquisas TIC Kids Online 2023 e TIC Domicílios 2023, desenvolvidas pelo Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação (CETIC). Constatamos que há um uso excessivo das tecnologias pelas crianças e jovens do Brasil, que utilizam a telas para uso recreativo mais de uma vez por dia. O tempo de uso das telas é maior para crianças e adolescentes que advém de classes mais favorecidas e a frequência de uso das tecnologias varia de acordo com a condição socioeconômica do aluno e com a região em que vive.
+
+
+</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>13</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45399</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45399</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Pensamento Computacional na aprendizagem da Multiplicação: uma revisão sistemática de literatura</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Alessandra Oliveira de</given_name>
+            <surname>Carvalho</surname>
+            <ORCID>https://orcid.org/0009-0003-3397-6405</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Eduardo</given_name>
+            <surname>Barrére</surname>
+            <ORCID>https://orcid.org/0000-0002-1598-5362</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>
+
+
+Numa sociedade digital é necessário integrar a tecnologia ao conhecimento humano e consequentemente inseri-la ao contexto escolar. O Pensamento Computacional PC se define como uma abordagem que aplicada no contexto educacional auxilia na resolução de problemas de forma que os educandos possam elaborar estratégias criativas e colaborativas. Para ressignificar o processo educativo, o Pensamento Computacional pode ser desenvolvido com um recurso pedagógico que facilite o acesso à informação e torne a aprendizagem mais significativa. O QR Code é uma ferramenta tecnológica que associada ao PC pode contribuir e impulsionar o conhecimento. Nesse contexto, é importante conhecer o estado da arte das pesquisas na área sobre Pensamento Computacional associado ao QR Code para apoiar a aprendizagem. Este artigo descreve uma Revisão Sistemática de Literatura sobre a aprendizagem da operação básica que envolve ideias multiplicativas de alunos do Ensino Fundamental I. Como resultado da Revisão Sistemática de Literatura foram selecionadas 3 publicações para análise. As leituras destes trabalhos apontam que o Pensamento Computacional é uma abordagem que auxilia na aprendizagem dos conceitos matemáticos e desenvolve habilidades em relação a resolução de problemas em todos os níveis de ensino. Entretanto não encontramos estudos que associam o Pensamento Computacional com QR Code como ferramenta tecnológica principal para apoiar a aprendizagem da multiplicação.
+
+
+</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>13</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45371</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45371</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Tecnologias no ensino de Matemática para crianças com TEA: o que dizem as pesquisas?</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Theysmara</given_name>
+            <surname>Menon</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Liamara</given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>José Maria </given_name>
+            <surname>Nazar David</surname>
+            <ORCID>https://orcid.org/0000-0002-3378-015X</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>
+
+
+A inclusão de estudantes com Transtorno do Espectro Autista (TEA) na sala de aula regular vem aumentando, mas apesar de ser amparada pela legislação brasileira está longe de ser uma realidade para todos. A inclusão, implica na oferta de matrícula e no pleno acesso ao currículo escolar, com as adequações necessárias, porém, muitas instituições ainda possuem práticas excludentes, que não levam em consideração as singularidades desses estudantes. A Matemática, por si só já é uma disciplina considerada complexa e para os estudantes com TEA, ela se torna supressora. Visto isso, o objetivo deste artigo, é apresentar o estado da arte das publicações, por meio de uma Revisão Sistemática de Literatura (RSL) sobre o uso de tecnologias no ensino de Matemática para alunos com TEA. A metodologia se baseou no protocolo de RSL consolidado por Kitchenham (2004), utilizando as bases de dados Google Scholar, CAPES e Biblioteca Digital de Teses e Dissertações (BDTD) num recorte temporal de 2008 a 2023. Após as análises das produções selecionadas, observou-se que a maioria das tecnologias para o ensino de Matemática para alunos com autismo, são jogos e também, a maioria dos professores não têm formação necessária para trabalhar com alunos com TEA.
+
+
+</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>12</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>11</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45420</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45420</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Uma análise do uso da tecnologia de Realidade Aumentada na aprendizagem de Matemática no Ensino Fundamental</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Anderson</given_name>
+            <surname>Silva</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Edmar</given_name>
+            <surname>Oliveira</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>
+
+
+
+
+
+A Matemática do ensino fundamental é uma disciplina habitualmente encarada pelos estudantes como de difícil compreensão. Apesar dessa percepção ser mais ou menos intensa, a depender do conteúdo sendo ministrado, ela é bastante presente no ensino do conteúdo de sólidos geométricos (poliedros). Nesse cenário, o uso de tecnologias se apresenta como uma importante estratégia para fomentar o aprendizado, sanando ou diminuindo as dificuldades enfrentadas pelos alunos. Dentre essas tecnologias, a Realidade Aumentada (RA) tem recebido grande destaque. De fato, a RA, disponível em dispositivos móveis através de aplicativos, tem auxiliado alunos na visualização e interpretação de formas geométricas espaciais; consequentemente, contribuindo com o aprendizado desse conteúdo. O objetivo deste trabalho consiste em analisar como alunos (especificamente do 6o ano do ensino fundamental) percebem o uso da RA no processo de aprendizagem de poliedros. Propôs-se, portanto, a realização de um estudo de caso, em um ambiente real de ensino, com alunos fazendo uso de um aplicativo de RA no decorrer do processo de aprendizagem do conteúdo de poliedros - possibilitando aos mesmos compararem a experiência de uso deste aplicativo com os recursos usualmente utilizados pelos educadores, como livros didáticos e quadro negro.
+
+
+
+
+
+</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>12</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>14</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45252</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45252</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title> O uso pedagógico de softwares educativos e educacionais como ferramentas de melhoria no ensino de Matemática </title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Isaias</given_name>
+            <surname>Ribeiro</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>José Maria</given_name>
+            <surname>David</surname>
+            <ORCID>https://orcid.org/0000-0002-3378-015X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Regina</given_name>
+            <surname>Braga</surname>
+            <ORCID>https://orcid.org/0000-0002-4888-0778</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo discute sobre o uso de softwares educativos e educacionais como recursos pedagógicos no ensino da Matemática nos Anos Finais do Ensino Fundamental. O estudante contemporâneo precisa utilizar os recursos tecnológicos disponíveis na sociedade para construir seus conhecimentos. Nesse contexto, defende-se que a tecnologia, mais especificamente aquela voltada especialmente para a educação, tende a potencializar o ensino de Matemática ajudando os alunos a superarem dificuldades nessa disciplina. É um recurso que pode atrair os estudantes para o aprendizado escolar, o que tem sido uma tarefa complicada nos tempos atuais, em que os alunos vivem em um universo praticamente paralelo e digital, enquanto as aulas, de uma forma geral, ainda não são tão interessantes quanto os jogos eletrônicos. Assim, esta pesquisa destaca a importância de reformular os objetivos, conteúdos e metodologias de ensino para atender às necessidades da sociedade atual. A metodologia do estudo é descrita como uma pesquisa qualitativa que se baseia em uma revisão de uma seleção específica de literatura. Os softwares em questão podem estimular os alunos, sendo uma alternativa didática alinhada à Base Nacional Comum Curricular. Também são mencionados o papel do lúdico no ensino da Matemática e a importância das analogias presentes nos softwares educativos e educacionais. É enfatizada a importância de considerar a realidade em que os estudantes estão inseridos, bem como suas habilidades no uso de softwares educacionais, adequando a proposta pedagógica a cada caso.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>09</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45414</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45414</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>análise das produções bibliográficas envolvendo a gamificação aliada ao Software GeoGebra para o ensino de Funções do Segundo Grau</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Iasmim</given_name>
+            <surname>Henrique Dias</surname>
+            <ORCID>https://orcid.org/0000-0001-5092-666X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Liamara</given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este trabalho tem por objetivo mapear as produções acadêmicas, identificando e analisando os trabalhos que debatem o uso da Gamificação aliada ao Software GeoGebra para o ensino de Funções do Segundo Grau. Utilizou-se as bases de dados do Portal de Periódico da Capes, BDTD e Google Scholar onde, após todos os critérios de inclusão e exclusão e leitura preliminar, discorreu-se sobre 06 (seis) trabalhos que possuíam aderência com a temática pesquisada e com o intuito de responder a seguinte questão: “Quais as contribuições da Gamificação aplicada no software GeoGebra, para o processo de aprendizagem de Funções do Segundo Grau?”. O resultado revelou uma lacuna na questão de investigação, visto que os trabalhos encontrados tratam da temática para a formação de professores e não para a aprendizagem do educando. Ainda, a gamificação no GeoGebra se mostrou um tema pouco debatido, mas relevante na busca por tornar o software mais atrativo e recepitivo.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>08</day>
+          <year>2024</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45385</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45385</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Educação Financeira Escolar no Ensino Fundamental II e o Exercício da Autonomia: uma Revisão da Literatura</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Mariléa</given_name>
+            <surname>Imaculada Martins Neto</surname>
+            <ORCID>https://orcid.org/0000-0002-3814-1744</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Chang Kuo</given_name>
+            <surname>Rodrigues</surname>
+            <ORCID>https://orcid.org/0000-0001-8716-6078</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo tem por objetivo fazer um levantamento das publicações sobre a Educação Financeira Escolar no Ensino Fundamental II sob a perspectiva da pedagogia da autonomia. A partir de uma Revisão Sistemática da Literatura (RSL), buscou-se produções que tratassem da temática Educação Financeira e fosse feita em três bases de dados, em um recorte temporal de seis anos (2018-2023). Percebeu-se que, ao final da análise, todas as publicações abordavam o ensino da Educação Financeira Escolar, quando foi possível constatar o desenvolvimento de pensamento crítico dos estudantes no momento em que se fez necessária a tomada de decisões em relação às finanças e, além disso, pode-se observar a oferta de sugestões como forma de contribuir para o ensino e a aprendizagem da Educação Financeira.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>07</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45367</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45367</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Jogos Educativos Digitais e a Aprendizagem na Escola</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Maura</given_name>
+            <surname>Auta</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Victor</given_name>
+            <surname>Ströele</surname>
+            <ORCID>https://orcid.org/0000-0001-6296-8605</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo descreve as possibilidades de ensinar com o uso de jogos digitais aplicados à Educação. Jogos Digitais englobam recursos que podem trazer para o aluno o desenvolvimento de habilidades e competências, uma nova forma de ensinar e aprender, facilitando a aprendizagem dos conteúdos das disciplinas. As diretrizes apresentadas neste trabalho servem como apoio ao professor em sua atuação enquanto regente, favorecendo os métodos de ensino na busca de motivação e melhoria do desempenho do aluno. Foi analisado um software educacional, o GCompris, com suas ferramentas atrativas para a resolução de atividades. Através de um estudo de viabilidade, percebe-se o interesse dos alunos pelo uso da tecnologia, que pode ser utilizada para motivar os processos mentais. Com a tecnologia digital, o docente é levado a capacitar-se para estar à frente, como mediador ativo e atuante, incentivando o aluno na sua formação cidadã.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>06</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45228</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45228</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <journal_volume>
+          <volume>3</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Logic T.E.I, um jogo educacional para auxiliar no processo de aprendizagem de Matemática Discreta</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Ivanylson</given_name>
+            <surname>Gonçalves</surname>
+            <ORCID>https://orcid.org/0009-0001-0002-4171</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Regina</given_name>
+            <surname>Braga</surname>
+            <ORCID>https://orcid.org/0000-0002-4888-0778</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Fernanda</given_name>
+            <surname>Campos</surname>
+            <ORCID>https://orcid.org/0000-0002-0763-2698</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Liamara</given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo apresenta o jogo educacional "Logic T.E.I, um jogo educacional para auxiliar no processo de aprendizagem de Matemática Discreta”. O objetivo é explorar o desenvolvimento e a eficácia do jogo educacional Logic T.E.I como ferramenta auxiliar no ensino de Matemática Discreta. Ao longo do texto, serão abordados os fundamentos teóricos que embasam o jogo educacional, os objetivos propostos para sua criação, a metodologia empregada no desenvolvimento, os resultados obtidos com sua aplicação e as possíveis contribuições do Logic T.E.I para a melhoria do processo de ensino-aprendizagem da Matemática Discreta. Serão discutidos também os desafios enfrentados pelos estudantes nessa disciplina e como o jogo pode auxiliar na superação dessas dificuldades, promovendo uma aprendizagem mais interativa e estimulante. Por meio deste artigo, busca-se destacar a importância da gamificação e dos jogos educacionais como estratégias pedagógicas inovadoras, capazes de tornar o ensino de conceitos complexos mais acessível e envolvente para os estudantes. O estudo do Logic T.E.I representa uma contribuição para a área de educação em Matemática Discreta, apresentando uma abordagem diferenciada para o aprimoramento do processo de ensino-aprendizagem nessa disciplina.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>08</month>
+          <day>05</day>
+          <year>2024</year>
+        </publication_date>
+        <pages>
+          <first_page>1</first_page>
+          <last_page>8</last_page>
+        </pages>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2023.v3.45061</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/45061</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Um relato de experiência sobre o uso do Google Docs na  Educação de Jovens e Adultos (EJA)</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Patricia de Carvalho Candeia </given_name>
+            <surname>Patrocínio</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Ao utilizar a informática como recurso no processo de ensino e aprendizagem, é importante levar em contavários aspectos, inclusive métodos e conteúdos de tais experiências e as formas de avaliação. Por isso, no atual contextoeducacional, em que os estudantes são nativos digitais, é preciso considerar a efetiva integração das tecnologias digitaisno currículo escolar. A partir desses pressupostos foram inseridas atividades remotas através do Google Docs. comobjetivo de promover a familiarização dos alunos da educação de jovens e adultos com os meios tecnológicos. Paraavaliar a experiência foram aplicadas atividades e questionários que embasaram os resultados deste relato. Conclui-seque o uso do Google Docs, especificamente na resolução de exercícios, colaborou com a melhoria na aprendizagemdos alunos. Portanto, nesta experiência, constata-se que o uso do Google Docs. foi positivo no ensino e aprendizagemremotos.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>01</month>
+          <day>27</day>
+          <year>2023</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.40132</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/40132</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Educação, pandemia e plataformas digitais: mais conectados ou expostos?</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Kadja Janaina</given_name>
+            <surname>Vieira Pereira</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Considerando que ano de 2020, a população mundial se viu desafiada pela crise provocada pela pandemia de Covid-19, causada pelo vírus SARS-CoV-2 e que no contexto educacional, plataformas digitais controladas por grandes corporações de tecnologia se apresentaram como estratégia inevitável para assegurar a manutenção das atividades escolares, este trabalho é um recorte de uma pesquisa sobre o avanço dessas empresas conhecidas pelo acrônimo GAFAM (Google, Amazon, Facebook, Apple e Microsoft) na Educação brasileira durante o ano de 2020 e busca ampliar a discussão a partir do seguinte questionamento: estamos atentos ao modo de operação dessas empresas e as implicações relacionadas à quantidade maciça de dados produzidos diariamente pela comunidade escolar por meio dessas infraestruturas digitais?</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>01</month>
+          <day>27</day>
+          <year>2023</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39505</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39505</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>AVA e redes sociais em disciplinas de Matemática na graduação à distância </title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Ana Carolina da Silva Chagas</given_name>
+            <surname>Rezende</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo estabelece uma discussão sobre o uso de AVA e Redes sociais no ensino de disciplinas matemáticas na graduação a distância. Durante o processo foram realizados estudos sobre o ensino da matemática à distância, como por exemplo, quais são os “gaps”, as dificuldades, os fatores que influenciam nesse processo de ensino e aprendizado. Foi realizada pesquisa prática aplicada através de formulários online para professores e alunos da graduação a distância, em contato com disciplinas voltadas à matemática. Esta pesquisa revelou que as redes sociais são um instrumento poderoso no ensino da matemática, mas não são o fator principal para o êxito desse processo. O sucesso do processo é um conjunto de ações tais como, boa comunicação, feedback constante de professores e alunos, uma boa coordenação de todo o processo do plano curricular e da comunicação entre o corpo docente, papéis e responsabilidade bem definidas entre o professor e o aluno, o sentimento de pertencimento a rede, e por fim os instrumentos de tecnologias digitais ao favor de todo o processo. Para finalizar, foi identificado novas perspectivas sobre estes estudos como a criação de uma BNCC para o curso EAD, garantindo normas e procedimentos adequados como base nesta modalidade de ensino, e uma possível regularização do uso das redes sociais de forma a ter registrado os direitos e deveres para os atores da utilização dessa tecnologia.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>01</month>
+          <day>27</day>
+          <year>2023</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.38853</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/38853</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>uso da gamificação como prática pedagógica no processo de ensino e aprendizagem da Língua Portuguesa através do GCompris</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Rosemeire Pereira de</given_name>
+            <surname>Novaes</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Alessandreia Marta de </given_name>
+            <surname>Oliveira</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Rodrigo Luis de Souza da</given_name>
+            <surname>Silva</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>A gamificação no contexto educacional vem ganhando espaço por sua capacidade de estimular a persistência, despertar a curiosidade e motivar a ação do estudante em ambientes de aprendizagem. Assim, se torna importante no processo de ensino e aprendizagem e pode contribuir para reverter a desmotivação dos alunos que é um dos maiores desafios da educação. O objetivo desta pesquisa é verificar o impacto do uso da gamificação como prática pedagógica no processo de ensino e aprendizagem da Língua Portuguesa através do software educacional GCompris. Foram aplicadas aos alunos atividades remotas gamificadas utilizando o GCompris e também um questionário online. Os resultados apresentam indícios de que a aplicação da gamificação por meio do GCompris é positiva nos aspectos da motivação, interação e melhoria no ensino e na aprendizagem da Língua Portuguesa.&#13;
+ </jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.40137</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/40137</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Educação Básica e o estágio supervisionado dos estudantes do curso de Licenciatura em Computação da UFJF no contexto da pandemia de COVID-19</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Vitor</given_name>
+            <surname>Fonseca Figueiredo</surname>
+            <ORCID>https://orcid.org/0000-0002-7010-0387</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Camila</given_name>
+            <surname>Gonçalves Silva Figueiredo</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>O presente texto tem por objetivo analisar as modificações no ensino ministrado na Educação Básica brasileira no contexto da pandemia do SARS-CoV-2, também conhecido como o coronavírus ou COVID-19. Ademais, busca-se analisar como as mudanças implementadas no ensino escolar no contexto da pandemia impactaram a formação inicial de docentes, especialmente da Licenciatura em Computação da Universidade Federal de Juiz de Fora (UFJF).</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39508</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39508</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>tecnologia da realidade aumentada como recurso didático nas aulas de Geografia do Ensino Fundamental</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Silvania Maria das Dores </given_name>
+            <surname>Sales</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Alessandreia Marta de Oliveira </given_name>
+            <surname>Julio</surname>
+            <ORCID>https://orcid.org/0000-0002-7169-587X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Rodrigo Luis de Souza </given_name>
+            <surname>Silva</surname>
+            <ORCID>https://orcid.org/0000-0002-4187-8798</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este trabalho é resultado de uma pesquisa sobre o uso de Realidade Aumentada no ensino de Geografia. A investigação proposta nesta pesquisa focou no processo de ensino e aprendizagem mediado por tecnologia digital, orientada para o ensino de Geografia. Inicialmente um  levantamento bibliográfico para melhor contextualizar o problema foi realizado. Posteriormente, planejou-se um estudo de caso prático envolvendo os  alunos do 6º ao 9º do ensino fundamental da Escola Municipal Professora Áurea Nardelli, situada em Juiz de Fora.  Para este estudo de caso  o aplicativo LandscapAR como apoio às aulas de Geografia da escola supracitada foi selecionado. Em seguida, foi aplicado um questionário aos alunos que participaram da atividade para a realização de uma análise qualitativa. Diante dos resultados obtidos compreendeu-se que o uso da tecnologia da Realidade Aumentada pode auxiliar na aprendizagem de conteúdos abstratos e também é capaz de oportunizar uma aprendizagem contextualizada, interativa e colaborativa.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39425</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39425</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>olhar sobre o estágio supervisionado na Licenciatura em Computação </title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Rosilana Aparecida</given_name>
+            <surname>Dias</surname>
+            <ORCID>https://orcid.org/0000-0002-1076-3912</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Josiane Cristina </given_name>
+            <surname>Dos Santos</surname>
+            <ORCID>https://orcid.org/0000-0003-0312-380X</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este trabalho visa trazer à tona o Estágio Supervisionado do curso de Licenciatura em Computação da Universidade Federal de Juiz de Fora, oferecido pelo Departamento de Ciência da Computação na modalidade a distância. Desta forma, analisamos qualitativamente os relatórios produzidos pelos alunos estagiários no período de 2021 (remoto devido à pandemia da Covid-19) e 2022 (presencial)  utilizando como referencial teórico o Projeto Pedagógico Curricular do referido curso bem como conceitos das tecnologias digitais da informação e comunicação na educação. Percebemos que o Estágio Supervisionado constitui uma fase importante na formação dos licenciandos, que veem nesta etapa do curso uma oportunidade de articular a teoria com a prática.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39319</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39319</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Pensamento computacional na educação básica e o uso do software Scratch</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Rafael</given_name>
+            <surname>Lauro Brugger</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Liamara </given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este artigo faz um recorte do Trabalho de Conclusão de Curso (TCC) intitulado Pensamento computacional na educação básica e o uso do software Scratch  apresentado no Curso de Licenciatura em Computação da Universidade Federal de Juiz de Fora no ano de 2022. O objetivo deste artigo é analisar como a utilização do software Scratch pode auxiliar no desenvolvimento do ensino do Pensamento Computacional na disciplina de Matemática. A pesquisa é de abordagem qualitativa, e utilizou-se de uma Revisão Sistemática de Literatura (RSL) entre os anos de 2012 à 2022 e a aplicação de um questionário para professores do Departamento de Matemática de uma escola pública do Estado de Minas Gerais (MG). As respostas ao questionário e os textos encontrados na RSL mostraram que os professores reconhecem a necessidade de se trabalhar com os estudantes os conceitos do Pensamento Computacional, assim como apresentaram o software Scratch como uma das principais ferramentas para trabalhar estes conceitos.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39205</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39205</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>efeitos da gamificação no processo de ensino aprendizagem</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Daniel</given_name>
+            <surname>Gonçalves Pereira</surname>
+            <ORCID>https://orcid.org/0000-0001-5267-681X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>José Maria N. </given_name>
+            <surname>David</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>O objetivo deste artigo é analisar como a utilização de recursos presentes na gamificação pode apoiar o aprendizado em um ambiente educacional utilizando a plataforma gamificada Matific voltada para disciplina de matemática. A pesquisa de abordagem qualitativa foi realizada com alunos do sexto ano do ensino fundamental em uma escola da rede pública no município de Governador Valadares – MG. Para tal, dividiu-se a turma em grupos de tratamento e controle que participaram de tarefas que nos permitiu concluir, a partir de um questionário e de observações que, um ambiente gamificado pode gerar resultados positivos no aprendizado do aluno como houve no grupo de tratamento desta pesquisa. A partir da pesquisa, foi possível compreender aspectos que podem afetar positivamente ou negativamente o andamento da aula e principalmente no aprendizado do aluno. Trabalhar com grupos menores contribuiu positivamente para a realização das atividades bem como a atenção dos alunos, um ambiente com muito barulho externo ou conversas intensas dispersa o foco da turma comprometendo a qualidade do aprendizado. Notou-se também que, o uso de recursos tecnológicos sem interação não gera resultados relevantes, o aluno precisa fazer parte da ação, é necessário que ele interaja com atividade a ponto que consiga perceber que há várias formas de atingir o mesmo objetivo, dessa forma ele estimula seu raciocínio logico e desenvolve novas habilidades.&#13;
+Palavras-chave: Gamificação, Matific, Aluno, Engajamento, Tecnologia, Atividade gamificada.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39201</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39201</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <journal_volume>
+          <volume>2</volume>
+        </journal_volume>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Percepções de alunos do curso de Licenciatura em Computação acerca da utilização de Gamificação na plataforma Moodle</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Daniel</given_name>
+            <surname>Athayde Sabbagh</surname>
+            <ORCID>https://orcid.org/0000-0001-7622-4754</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Rodrigo Luis</given_name>
+            <surname>De Souza da Silva</surname>
+            <ORCID>https://orcid.org/0000-0002-4187-8798</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>O presente estudo dispôs como finalidade avaliar a percepção de alunos dos últimos períodos do curso de Licenciatura em Computação, ofertado pela Universidade Federal de Juiz de Fora via EaD, acerca da utilização de gamificação na plataforma Moodle, utilizada durante o decorrer do curso. Além disso, observou-se quais as opções mais interessantes dentro de algumas técnicas já conhecidas para aplicação com intuito de causar maior engajamento e interesse dos alunos. A coleta de participações foi realizada através da internet com questionário desenvolvido na ferramenta Google Formulários. A partir dos resultados ficou evidenciado que os participantes se mostraram insatisfeitos com o nível de gamificação presente no curso, gostariam que a metodologia contasse com maior presença no decorrer da graduação e foram bastante receptivos com as ideias de algumas aplicações de gamificação descritas no estudo, principalmente quando se tratam de sistema de pontos / moeda virtual com possibilidade de troca por recompensas chamativas. No entanto, alguns alunos não consideraram a gamificação essencial para o processo de aprendizagem.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>12</month>
+          <day>22</day>
+          <year>2022</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2022.v2.39148</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/39148</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <journal_volume>
+          <volume>1</volume>
+        </journal_volume>
+        <issue>2</issue>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title> extensão e a integração com o ensino e a pesquisa na formação discente na Licenciatura em Computação:  projeto e-TEIA</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Liamara </given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>https://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Priscila Rodrigues de </given_name>
+            <surname>Oliveira</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Luzia Aparecida da</given_name>
+            <surname>Silva</surname>
+            <ORCID>https://orcid.org/0000-0002-7721-1311</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Fabiano</given_name>
+            <surname>Rodrigues de Carvalho</surname>
+            <ORCID>https://orcid.org/0000-0002-6105-215X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Josiane</given_name>
+            <surname>Silva</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Apresentamos neste artigo, a trajetória da integração da extensão com o ensino e a pesquisa na formação discente a partir de ações desenvolvidas no projeto “e-TEIA - Tecnologias de informação e comunicação na Educação: Inovação na sala de Aula” no curso de Licenciatura em Computação (LiComp) da Universidade Federal de Juiz de Fora (UFJF). O e-TEIA tem como objetivo ampliar a formação dos alunos da LiComp, inserindo-os no cotidiano das escolas da rede pública com o intuito de capacitar e informar os professores no uso das Tecnologias de Informação e Comunicação (TICs) na sala de aula, bem como melhorar a formação dos alunos da LiComp, através de uma proposta integrada de ensino, pesquisa e extensão e ainda, aproximá-los com a UFJF, promovendo a construção de um processo de identidade e pertencimento com a Instituição de ensino. Destacamos ainda, a relevância da extensão no processo educacional do graduando, sua presença no eixo curricular dos cursos EAD, bem como evidenciamos o percurso do e-TEIA, em suas edições junto à LiComp, expondo o processo empregado e os benefícios alcançados pelos discentes, universidade e comunidade.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2021.v1.35971</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/35971</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <journal_volume>
+          <volume>1</volume>
+        </journal_volume>
+        <issue>2</issue>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Ser egresso da Licenciatura em Computação da UFJF: LiComp UFJF 2010</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Cláudio Lúcio da </given_name>
+            <surname>Mata</surname>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>O relato de experiência apresenta a visão do egresso do curso de Licenciatura em Computação (LiComp), Cláudio Lúcio da Mata, acerca do curso realizado na Universidade Federal de Juiz de Fora (UFJF) na modalidade de Educação a Distância (EaD). Este relato ainda aborda importantes conhecimentos adquiridos pelo ex-discente, agora docente, e suas implantações na instituição em que trabalha. Além disso, é demonstrado como o curso transformou a vida profissional e pessoal do relator, como também de seus colegas professores e, principalmente, dos seus alunos. Com este texto, um dos focos principais é como os saberes do curso de LiComp foram fundamentais para o enfrentamento do atual cenário pandêmico na educação brasileira.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2021.v1.35765</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/35765</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <journal_volume>
+          <volume>1</volume>
+        </journal_volume>
+        <issue>2</issue>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Licenciatura em Computação da UFJF: 10 anos de história e desafios</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Fernanda </given_name>
+            <surname>Campos </surname>
+            <ORCID>https://orcid.org/0000-0002-0763-2698</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Liamara</given_name>
+            <surname>Scortegagna</surname>
+            <ORCID>http://orcid.org/0000-0001-6825-4945</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>O artigo apresenta a trajetória dos dez anos de história do Curso de Licenciatura em Computação da Universidade Federal de Juiz de Fora, ofertado na modalidade de Educação a Distância e destaca dois desafios: a gestão da Educação a Distância e a evasão do Curso. O objetivo é compartilhar as experiências e situações vivenciadas ao longo desse período de tempo e refletir sobre estratégias que visem à redução desses desafios. Apresentamos ainda, a contextualização da Educação a Distância na Universidade Federal de Juiz de Fora e as principais características do projeto pedagógico do Curso como objetivos, perfil dos egressos, grade curricular, estágios, oferta nos polos de apoio presenciais e os atores do processo educacional da licenciatura.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2021.v1.35613</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/35613</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <journal_volume>
+          <volume>1</volume>
+        </journal_volume>
+        <issue>2</issue>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Pensamento computacional no ensino médio das escolas públicas</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Daniel Pessoa</given_name>
+            <surname>Costa</surname>
+            <ORCID>https://orcid.org/0000-0001-7381-7618</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Rômulo</given_name>
+            <surname>Gonzaga</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Regina</given_name>
+            <surname>Braga</surname>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>José Maria</given_name>
+            <surname>David</surname>
+            <ORCID>https://orcid.org/0000-0002-3378-015X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Victor</given_name>
+            <surname>Stroele</surname>
+            <ORCID>https://orcid.org/0000-0001-6296-8605</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Fernanda</given_name>
+            <surname>Campos</surname>
+            <ORCID>https://orcid.org/0000-0002-0763-2698</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>Este trabalho apresenta algumas perspectivas relacionadas ao pensamento computacional no ensino médio. O trabalho apresenta o conceito de pensamento computacional, enfatizando sua eficácia e suas formas de aplicação como uma forma de auxiliar o processo de aprendizagem no ensino médio. São apresentadas as dificuldades enfrentadas durante o desenvolvimento da educação profissional no Brasil, e a situação que se encontra atualmente. São também apresentados os resultados de projetos e atividades educacionais que fizeram o uso dos conceitos do pensamento computacional. Finalmente são apresentados os resultados de uma estudo exploratório, sobre o conhecimento e utilização do pensamento computacional na rede pública municipal de Governador Valadares, através da aplicação de um questionário.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2021.v1.35553</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/35553</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+    <journal>
+      <journal_metadata>
+        <full_title>Lynx</full_title>
+        <abbrev_title>Lynx</abbrev_title>
+        <issn media_type="electronic">2675-4126</issn>
+      </journal_metadata>
+      <journal_issue>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <journal_volume>
+          <volume>1</volume>
+        </journal_volume>
+        <issue>2</issue>
+      </journal_issue>
+      <journal_article xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" publication_type="full_text" metadata_distribution_opts="any">
+        <titles>
+          <title>Uso de Aprendizado de Máquina  para detecção de risco de evasão no curso de Licenciatura em Computação</title>
+        </titles>
+        <contributors>
+          <person_name contributor_role="author" sequence="first" language="pt">
+            <given_name>Felipe</given_name>
+            <surname>Neves</surname>
+            <ORCID>https://orcid.org/0000-0003-1447-7187</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Fernanda</given_name>
+            <surname>Campos</surname>
+            <ORCID>https://orcid.org/0000-0002-0763-2698</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Mario</given_name>
+            <surname>Dantas</surname>
+            <ORCID>https://orcid.org/0000-0002-2312-7042</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>José Maria</given_name>
+            <surname>David</surname>
+            <ORCID>https://orcid.org/0000-0002-3378-015X</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Regina</given_name>
+            <surname>Braga</surname>
+            <ORCID>https://orcid.org/0000-0002-4888-0778</ORCID>
+          </person_name>
+          <person_name contributor_role="author" sequence="additional" language="pt">
+            <given_name>Victor</given_name>
+            <surname>Stroele</surname>
+            <ORCID>https://orcid.org/0000-0001-6296-8605</ORCID>
+          </person_name>
+        </contributors>
+        <jats:abstract xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1">
+          <jats:p>A evasão escolar é um verdadeiro desafio para os especialistas em educação. Os cursos de educação a distância lidam com o desengajamento e abandono dos alunos, que resulta em impactos sociais e econômicos. Fatores comportamentais, cognitivos e demográficos podem estar associados à evasão escolar precoce. Este artigo propõe uma arquitetura baseada em um comitê de classificadores, capaz de prever o desengajamento dos alunos durante o curso. São feitas notificações aos professores e tutores, permitindo-lhes intervir de forma eficaz e tornar o sucesso dos alunos possível. Para avaliar a proposta, um estudo de caso foi conduzido no curso de Licenciatura em computação, modalidade  a distância da UFJF e os resultados indicam a viabilidade da solução e do uso de suas tecnologias. Os resultados apontaram um aumento significativo de acerto na identificação de alunos com risco de evasão, , chegando a 93% de precisão.</jats:p>
+        </jats:abstract>
+        <publication_date media_type="online">
+          <month>11</month>
+          <day>12</day>
+          <year>2021</year>
+        </publication_date>
+        <ai:program xmlns:ai="http://www.crossref.org/AccessIndicators.xsd" name="AccessIndicators">
+          <ai:license_ref>https://creativecommons.org/licenses/by/4.0</ai:license_ref>
+        </ai:program>
+        <doi_data>
+          <doi>10.34019/2675-4126.2021.v1.35552</doi>
+          <resource>https://periodicos.ufjf.br/index.php/lynx/article/view/35552</resource>
+          <collection property="crawler-based"/>
+          <collection property="text-mining"/>
+        </doi_data>
+      </journal_article>
+    </journal>
+  </body>
+</doi_batch>

@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5] [cursor=pointer]: 
+        - link "Projeto Allan Kardec" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e8]:
+        - generic [ref=e10] [cursor=pointer]: translate
+        - link "Login" [ref=e11] [cursor=pointer]:
+          - /url: /auth0Login
+          - text: Login
+  - generic [ref=e13]:
+    - generic [ref=e15]:
+      - link "Início" [ref=e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e19]:
+        - text: O Projeto
+        - generic [ref=e20]:
+          - link "Apresentação" [ref=e21] [cursor=pointer]:
+            - /url: /apresentacao
+          - link "Acervos" [ref=e22] [cursor=pointer]:
+            - /url: /acervos
+          - link "Política Editorial" [ref=e23] [cursor=pointer]:
+            - /url: /politicaeditorial
+          - link "Equipe" [ref=e24] [cursor=pointer]:
+            - /url: /equipe
+          - link "Condições de uso" [ref=e25] [cursor=pointer]:
+            - /url: /condicoesdeuso
+      - generic [ref=e26]:
+        - text: Acesso rápido
+        - generic [ref=e27]:
+          - link "Publicações recentes" [ref=e28] [cursor=pointer]:
+            - /url: /acesso/recente
+          - link "Ano do documento" [ref=e29] [cursor=pointer]:
+            - /url: /acesso/ano
+          - link "Categoria" [ref=e30] [cursor=pointer]:
+            - /url: /acesso/categoria
+          - link "Acervo" [ref=e31] [cursor=pointer]:
+            - /url: /acesso/acervo
+          - link "Identificador" [ref=e32] [cursor=pointer]:
+            - /url: /acesso/id
+      - link "Pesquisar" [ref=e35] [cursor=pointer]:
+        - /url: /pesquisar
+      - link "Imagens" [ref=e38] [cursor=pointer]:
+        - /url: /imagens
+      - link "Timeline" [ref=e41] [cursor=pointer]:
+        - /url: /timeline
+      - link "Biografias" [ref=e44] [cursor=pointer]:
+        - /url: /biografias
+      - link "Bibliografia" [ref=e47] [cursor=pointer]:
+        - /url: /bibliografia
+      - link "Contato" [ref=e50] [cursor=pointer]:
+        - /url: /contato
+    - main [ref=e52]:
+      - heading "Biografias" [level=1] [ref=e55]
+      - generic [ref=e58]:
+        - link "Alfred Maxime Louis Didier" [ref=e63] [cursor=pointer]:
+          - /url: /biografias/item/287
+        - link "Armand Adrien Greslez" [ref=e68] [cursor=pointer]:
+          - /url: /biografias/item/346
+        - link "Augustin Babin" [ref=e73] [cursor=pointer]:
+          - /url: /biografias/item/342
+        - link "Chefe de polícia da cidade de Paris" [ref=e78] [cursor=pointer]:
+          - /url: /biografias/item/197
+        - link "Désirée Godu" [ref=e83] [cursor=pointer]:
+          - /url: /biografias/item/348
+        - link "Émile Sabò" [ref=e88] [cursor=pointer]:
+          - /url: /biografias/item/198
+        - 'link "Enrico Dalmazzo (Pseudônimo: Teofilo Coreni)" [ref=e93] [cursor=pointer]':
+          - /url: /biografias/item/345
+        - link "Eugène Vézy" [ref=e98] [cursor=pointer]:
+          - /url: /biografias/item/377
+        - link "Francisco Antônio Pereira Rocha" [ref=e103] [cursor=pointer]:
+          - /url: /biografias/item/196
+        - link "Honoré Ea Guillaume Guillon/Sra Lescot/Sra. Costel" [ref=e108] [cursor=pointer]:
+          - /url: /biografias/item/199
+        - link "Jean Alexandre Chaigneau" [ref=e113] [cursor=pointer]:
+          - /url: /biografias/item/344
+        - link "Jean Marie Tailleur" [ref=e118] [cursor=pointer]:
+          - /url: /biografias/item/349
+        - link "Johannes Nicolaas Tiedeman" [ref=e123] [cursor=pointer]:
+          - /url: /biografias/item/200
+        - link "Laurent Dijoud" [ref=e128] [cursor=pointer]:
+          - /url: /biografias/item/343
+        - link "Louis Jean-Baptiste de Tourreil" [ref=e133] [cursor=pointer]:
+          - /url: /biografias/item/376
+        - link "Louis Joseph Félix Morin" [ref=e138] [cursor=pointer]:
+          - /url: /biografias/item/350
+        - link "Louis Joseph Gabriel Rul" [ref=e143] [cursor=pointer]:
+          - /url: /biografias/item/374
+        - link "Louis Timagène Houat" [ref=e148] [cursor=pointer]:
+          - /url: /biografias/item/201
+        - link "Marguerite Clémence Lajarriges. Sra. Cazemajour" [ref=e153] [cursor=pointer]:
+          - /url: /biografias/item/347
+        - link "Marie Rose Ernestine de Johanne de la Carre de Saumery, a Sra. Dozon" [ref=e158] [cursor=pointer]:
+          - /url: /biografias/item/351
+        - link "Pierre Paul Didier" [ref=e163] [cursor=pointer]:
+          - /url: /biografias/item/373
+        - link "Senhor Pâtier" [ref=e168] [cursor=pointer]:
+          - /url: /biografias/item/203
+        - link "Senhora Foulon" [ref=e173] [cursor=pointer]:
+          - /url: /biografias/item/202
+        - link "Sr. Henri (Nicolas) Victor Dozon" [ref=e178] [cursor=pointer]:
+          - /url: /biografias/item/375
+        - link "Thiry ou Pierre Thiry" [ref=e183] [cursor=pointer]:
+          - /url: /biografias/item/204
+      - generic [ref=e184]:
+        - link "Universidade Federal de Juiz de Fora" [ref=e185] [cursor=pointer]:
+          - /url: http://ufjf.br/
+          - img [ref=e186]
+        - link "Núcleo de Pesquisa em Espiritualidade e Saúde - UFJF" [ref=e187] [cursor=pointer]:
+          - /url: https://www.ufjf.br/nupes/
+          - img [ref=e188]
+        - link "Fundação Espírita André Luiz" [ref=e189] [cursor=pointer]:
+          - /url: https://feal.com.br/
+          - img [ref=e190]
+        - link "Museu Allan Kardec Online" [ref=e191] [cursor=pointer]:
+          - /url: https://www.allankardec.online/
+          - img [ref=e192]
