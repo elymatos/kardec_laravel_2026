@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - text: 
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5] [cursor=pointer]: 
+        - link "Projeto Allan Kardec" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e8]:
+        - generic [ref=e10] [cursor=pointer]: translate
+        - link "Login" [ref=e11] [cursor=pointer]:
+          - /url: /auth0Login
+          - text: Login
+  - generic [ref=e13]:
+    - generic [ref=e15]:
+      - link "Início" [ref=e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e19]:
+        - text: O Projeto
+        - generic [ref=e20]:
+          - link "Apresentação" [ref=e21] [cursor=pointer]:
+            - /url: /apresentacao
+          - link "Acervos" [ref=e22] [cursor=pointer]:
+            - /url: /acervos
+          - link "Política Editorial" [ref=e23] [cursor=pointer]:
+            - /url: /politicaeditorial
+          - link "Equipe" [ref=e24] [cursor=pointer]:
+            - /url: /equipe
+          - link "Condições de uso" [ref=e25] [cursor=pointer]:
+            - /url: /condicoesdeuso
+      - generic [ref=e26]:
+        - text: Acesso rápido
+        - generic [ref=e27]:
+          - link "Publicações recentes" [ref=e28] [cursor=pointer]:
+            - /url: /acesso/recente
+          - link "Ano do documento" [ref=e29] [cursor=pointer]:
+            - /url: /acesso/ano
+          - link "Categoria" [ref=e30] [cursor=pointer]:
+            - /url: /acesso/categoria
+          - link "Acervo" [ref=e31] [cursor=pointer]:
+            - /url: /acesso/acervo
+          - link "Identificador" [ref=e32] [cursor=pointer]:
+            - /url: /acesso/id
+      - link "Pesquisar" [ref=e35] [cursor=pointer]:
+        - /url: /pesquisar
+      - link "Imagens" [ref=e38] [cursor=pointer]:
+        - /url: /imagens
+      - link "Timeline" [ref=e41] [cursor=pointer]:
+        - /url: /timeline
+      - link "Biografias" [ref=e44] [cursor=pointer]:
+        - /url: /biografias
+      - link "Bibliografia" [ref=e47] [cursor=pointer]:
+        - /url: /bibliografia
+      - link "Contato" [ref=e50] [cursor=pointer]:
+        - /url: /contato
+    - main [ref=e52]:
+      - heading "Apresentação" [level=1] [ref=e55]
+      - generic [ref=e57]:
+        - paragraph [ref=e58]:
+          - text: Esta plataforma digital faz parte do
+          - strong [ref=e59]: Projeto Allan Kardec
+          - text: ", que tem por principal objetivo permitir o acesso do público em geral e de pesquisadores a centenas de manuscritos e documentos originais de Allan Kardec, a maioria dos quais nunca haviam sido divulgados e editados. Assim, o projeto pretende se tornar referência para fontes históricas primárias ligadas ao pensador francês Allan Kardec, nos moldes de iniciativas semelhantes, que disponibilizam os manuscritos de autores influentes no mundo intelectual, tais como:"
+        - list [ref=e60]:
+          - listitem [ref=e61]:
+            - strong [ref=e62]:
+              - link "The Newton Project" [ref=e63] [cursor=pointer]:
+                - /url: http://www.newtonproject.ox.ac.uk/
+            - text: ", da Universidade de Oxford."
+          - listitem [ref=e64]:
+            - strong [ref=e65]:
+              - link "Darwin Correspondence Project" [ref=e66] [cursor=pointer]:
+                - /url: https://www.darwinproject.ac.uk/
+            - text: ", da Universidade de Cambridge."
+        - paragraph [ref=e67]: "Arquivos e plataformas digitais para disponibilização de textos-chave de tradições religiosas mantidos por diversas universidades internacionais de destaque também serviram de modelo. Por exemplo:"
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - strong [ref=e70]:
+              - link "Codex Sinaiticus Project" [ref=e71] [cursor=pointer]:
+                - /url: https://www.codexsinaiticus.org/en/
+            - text: ", é um dos mais antigos manuscritos da Bíblia Cristã em grego. Parceria entre a Leipzig University e British Library, St Catherine’s Monastery e The National Library of Russia."
+          - listitem [ref=e72]:
+            - strong [ref=e73]:
+              - link "Cambridge Digital Library" [ref=e74] [cursor=pointer]:
+                - /url: https://cudl.lib.cam.ac.uk/
+            - text: ", da Universidade de Cambridge, é uma das maiores bibliotecasdigitais do mundo. Possui em seu acervo inúmeros manuscritos de textos religiosos tais comocoleções de Christian Works, IslamicManuscripts, HebrewManuscripts e SanskritManuscripts."
+        - paragraph [ref=e75]: A implementação da plataforma digital “Projeto Allan Kardec” se alinha com as iniciativas supracitadas tornando-se a principal fonte primária para estudos sobre Allan Kardec em todo o mundo, potencializando pesquisas sobre o tema em diversas áreas do conhecimento.
+        - paragraph
+      - generic [ref=e76]:
+        - link "Universidade Federal de Juiz de Fora" [ref=e77] [cursor=pointer]:
+          - /url: http://ufjf.br/
+          - img [ref=e78]
+        - link "Núcleo de Pesquisa em Espiritualidade e Saúde - UFJF" [ref=e79] [cursor=pointer]:
+          - /url: https://www.ufjf.br/nupes/
+          - img [ref=e80]
+        - link "Fundação Espírita André Luiz" [ref=e81] [cursor=pointer]:
+          - /url: https://feal.com.br/
+          - img [ref=e82]
+        - link "Museu Allan Kardec Online" [ref=e83] [cursor=pointer]:
+          - /url: https://www.allankardec.online/
+          - img [ref=e84]

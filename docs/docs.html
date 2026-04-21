@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kardec Design System — Documentação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* ---- Inline all three CSS files for self-contained docs ---- */
+
+/* TOKENS */
+:root{--color-ink-900:#0f1016;--color-ink-800:#1a1c24;--color-ink-700:#22253a;--color-ink-600:#2e3245;--color-ink-500:#3d4260;--color-ink-400:#555b7a;--color-parchment-100:#faf8f3;--color-parchment-200:#f5f0e6;--color-parchment-300:#ede5d0;--color-parchment-400:#d9ccb0;--color-gold-300:#e8c97a;--color-gold-400:#d4a94a;--color-gold-500:#b8892a;--color-gold-600:#9a7020;--color-gold-700:#7a5c1e;--color-gold-800:#5c4316;--color-rust-400:#b05a40;--color-rust-500:#7d3b2a;--color-rust-600:#5c2a1c;--color-neutral-500:#8a8070;--color-neutral-400:#a89880;--color-neutral-300:#c8b89a;--surface-page:var(--color-parchment-100);--surface-card:var(--color-parchment-200);--surface-dark:var(--color-ink-800);--surface-dark-mid:var(--color-ink-600);--surface-overlay:rgba(26,28,36,.97);--text-primary:var(--color-ink-800);--text-secondary:rgba(26,28,36,.8);--text-muted:var(--color-neutral-500);--text-on-dark:var(--color-parchment-200);--text-on-dark-muted:rgba(245,240,230,.55);--text-accent:var(--color-gold-500);--text-accent-light:var(--color-gold-400);--text-sepia:var(--color-gold-700);--border-default:rgba(184,137,42,.22);--border-strong:rgba(184,137,42,.45);--border-dark:rgba(184,137,42,.14);--border-subtle:rgba(26,28,36,.12);--color-focus-ring:rgba(184,137,42,.35);--color-hover-bg:rgba(184,137,42,.08);--color-hover-bg-dark:rgba(245,240,230,.06);--font-display:'Playfair Display',Georgia,'Times New Roman',serif;--font-body:'Spectral',Georgia,'Times New Roman',serif;--font-mono:'DM Mono','Courier New',monospace;--text-xs:.6rem;--text-sm:.72rem;--text-base:.88rem;--text-md:1rem;--text-lg:1.2rem;--text-xl:1.5rem;--text-2xl:2rem;--text-3xl:clamp(1.6rem,4vw,2.5rem);--text-4xl:clamp(2.4rem,7vw,5rem);--leading-tight:1.1;--leading-snug:1.18;--leading-normal:1.5;--leading-relaxed:1.72;--leading-loose:1.85;--tracking-tight:-.01em;--tracking-normal:0;--tracking-wide:.06em;--tracking-wider:.1em;--tracking-widest:.2em;--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;--space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;--section-py:clamp(4rem,8vw,8rem);--section-px:clamp(1rem,5vw,3rem);--container-max:1200px;--container-narrow:780px;--radius-sm:3px;--radius-md:6px;--radius-lg:12px;--radius-xl:20px;--radius-full:9999px;--shadow-sm:0 2px 8px rgba(26,28,36,.1);--shadow-md:0 4px 32px rgba(26,28,36,.18);--shadow-lg:0 8px 48px rgba(26,28,36,.25);--shadow-xl:0 20px 60px rgba(0,0,0,.5);--shadow-glow:0 6px 24px rgba(26,28,36,.1);--shadow-focus:0 0 0 4px rgba(184,137,42,.12),0 8px 40px rgba(0,0,0,.3);--transition-fast:.15s cubic-bezier(.4,0,.2,1);--transition-base:.3s cubic-bezier(.4,0,.2,1);--transition-slow:.5s cubic-bezier(.4,0,.2,1);--transition-spring:.4s cubic-bezier(.34,1.56,.64,1);--duration-fast:150ms;--duration-base:300ms;--duration-slow:500ms;--duration-reveal:700ms;--ease-in-out:cubic-bezier(.4,0,.2,1);--ease-out:cubic-bezier(0,0,.2,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);--nav-height:64px;--mobile-nav-height:60px;--z-base:1;--z-dropdown:50;--z-sticky:99;--z-nav:100;--z-modal:200;--z-toast:300}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--color-parchment-100);color:var(--color-ink-800);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.18}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--color-parchment-200)}::-webkit-scrollbar-thumb{background:var(--color-gold-500);border-radius:3px}
+
+/* ---- DOCS LAYOUT ---- */
+.docs-wrap{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.docs-sidebar{
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+  background:var(--color-ink-800);
+  border-right:1px solid rgba(184,137,42,.15);
+  padding:2rem 0;
+}
+.docs-sidebar-logo{
+  display:flex;align-items:center;gap:.75rem;
+  padding:0 1.5rem 1.5rem;
+  border-bottom:1px solid rgba(184,137,42,.12);
+  margin-bottom:1.5rem;
+}
+.docs-sidebar-logo-mark{
+  width:32px;height:32px;border:1.5px solid var(--color-gold-500);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-display);font-size:.85rem;font-style:italic;color:var(--color-gold-500);
+}
+.docs-sidebar-logo-text{
+  font-family:var(--font-display);font-size:.85rem;color:var(--color-parchment-200);line-height:1.2;
+}
+.docs-sidebar-logo-text small{display:block;font-size:.65em;color:var(--color-gold-500);font-style:italic}
+.docs-nav-group{margin-bottom:1.5rem;padding:0 1.5rem;}
+.docs-nav-label{
+  font-family:var(--font-mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(245,240,230,.3);margin-bottom:.5rem;
+}
+.docs-nav-link{
+  display:block;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;
+  color:rgba(245,240,230,.55);padding:.4rem .5rem;border-radius:4px;
+  transition:var(--transition-base);
+}
+.docs-nav-link:hover,.docs-nav-link.active{color:var(--color-gold-500);background:rgba(184,137,42,.08)}
+
+.docs-main{flex:1;overflow-y:auto;padding:3rem 4rem 6rem;}
+
+/* Section headers in docs */
+.doc-section{margin-bottom:5rem}
+.doc-section-title{
+  font-size:1.8rem;color:var(--color-ink-800);
+  padding-bottom:.75rem;border-bottom:2px solid var(--border-default);
+  margin-bottom:2.5rem;
+}
+.doc-section-title small{
+  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--color-gold-500);display:block;margin-bottom:.3rem;font-weight:400;
+}
+.doc-subsection{margin-bottom:3rem}
+.doc-subsection-title{
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--color-gold-500);margin-bottom:1.25rem;
+  display:flex;align-items:center;gap:.75rem;
+}
+.doc-subsection-title::after{content:'';flex:1;height:1px;background:var(--border-default)}
+
+/* Preview canvas */
+.doc-preview{
+  background:var(--color-parchment-200);border:1px solid var(--border-default);
+  border-radius:var(--radius-md);padding:2rem;margin-bottom:.75rem;
+}
+.doc-preview--dark{background:var(--color-ink-800)}
+.doc-preview--grid{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+
+/* Code block */
+.doc-code{
+  background:var(--color-ink-700);color:#c9d1d9;border-radius:var(--radius-md);
+  padding:1rem 1.25rem;font-family:var(--font-mono);font-size:.78rem;
+  line-height:1.7;overflow-x:auto;white-space:pre;
+}
+.doc-code .tag{color:#7ee787}
+.doc-code .attr{color:#79c0ff}
+.doc-code .val{color:#a5d6ff}
+.doc-code .comment{color:#8b949e;font-style:italic}
+
+/* Color swatch */
+.swatches{display:flex;flex-wrap:wrap;gap:.75rem}
+.swatch{
+  display:flex;flex-direction:column;border-radius:var(--radius-md);
+  overflow:hidden;width:100px;border:1px solid var(--border-subtle);box-shadow:var(--shadow-sm);
+}
+.swatch__color{height:60px;width:100%}
+.swatch__info{padding:.4rem .5rem;background:white}
+.swatch__name{font-family:var(--font-mono);font-size:.6rem;color:var(--color-ink-600);letter-spacing:.04em}
+.swatch__value{font-family:var(--font-mono);font-size:.6rem;color:var(--color-neutral-500)}
+
+/* Type specimen */
+.type-row{display:flex;align-items:baseline;gap:1.5rem;padding:.75rem 0;border-bottom:1px solid var(--border-subtle)}
+.type-row:last-child{border-bottom:none}
+.type-label{font-family:var(--font-mono);font-size:.62rem;color:var(--text-muted);width:100px;flex-shrink:0}
+.type-sample{flex:1}
+
+/* Spacing scale */
+.space-row{display:flex;align-items:center;gap:1rem;margin-bottom:.75rem}
+.space-bar{background:var(--color-gold-500);height:12px;border-radius:2px;opacity:.6}
+.space-label{font-family:var(--font-mono);font-size:.65rem;color:var(--text-muted);width:120px;flex-shrink:0}
+
+/* Component meta table */
+.prop-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.prop-table th{
+  font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-muted);padding:.5rem .75rem;text-align:left;
+  border-bottom:1px solid var(--border-default);background:var(--color-parchment-200);
+}
+.prop-table td{padding:.6rem .75rem;border-bottom:1px solid var(--border-subtle);vertical-align:top}
+.prop-table tr:last-child td{border-bottom:none}
+.prop-name{font-family:var(--font-mono);font-size:.75rem;color:var(--color-gold-700)}
+.prop-type{font-family:var(--font-mono);font-size:.72rem;color:var(--color-ink-500)}
+.prop-default{font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted)}
+
+/* ---- Component CSS (inline) ---- */
+.k-badge{display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:var(--tracking-wider);text-transform:uppercase;padding:var(--space-1) var(--space-2);border-radius:var(--radius-sm);line-height:1;white-space:nowrap}
+.k-badge--default{background:rgba(26,28,36,.75);color:var(--color-gold-400);backdrop-filter:blur(6px)}
+.k-badge--gold{background:var(--color-gold-500);color:var(--color-ink-800)}
+.k-badge--outline{background:transparent;color:var(--color-gold-500);border:1px solid var(--border-default)}
+.k-badge--parchment{background:var(--color-parchment-200);color:var(--color-gold-700);border:1px solid var(--border-default)}
+
+.k-chip{display:inline-flex;align-items:center;gap:var(--space-2);font-family:var(--font-mono);font-size:.68rem;letter-spacing:var(--tracking-wider);text-transform:uppercase;border-radius:var(--radius-full);padding:var(--space-1) var(--space-3);cursor:pointer;transition:var(--transition-base);border:none;background:none}
+.k-chip--dark{color:rgba(245,240,230,.5);border:1px solid rgba(184,137,42,.2)}
+.k-chip--dark:hover,.k-chip--dark.is-active{color:var(--color-gold-500);border-color:var(--color-gold-500);background:var(--color-hover-bg)}
+.k-chip--light{color:var(--color-ink-600);border:1px solid var(--border-subtle)}
+.k-chip--light:hover,.k-chip--light.is-active{background:var(--color-ink-800);color:var(--color-parchment-200);border-color:var(--color-ink-800)}
+.k-chip__dot{width:8px;height:8px;border-radius:var(--radius-full);flex-shrink:0}
+
+.k-btn{display:inline-flex;align-items:center;gap:var(--space-2);font-family:var(--font-mono);font-size:var(--text-sm);letter-spacing:var(--tracking-wider);text-transform:uppercase;border:none;cursor:pointer;border-radius:var(--radius-md);padding:var(--space-2) var(--space-5);transition:var(--transition-base);line-height:1;white-space:nowrap}
+.k-btn--primary{background:var(--color-gold-500);color:var(--color-ink-800)}
+.k-btn--primary:hover{background:var(--color-gold-400)}
+.k-btn--ghost-dark{background:rgba(245,240,230,.06);color:rgba(245,240,230,.5);border:1px solid var(--border-dark)}
+.k-btn--ghost-dark:hover,.k-btn--ghost-dark.is-active{color:var(--color-gold-400);border-color:rgba(184,137,42,.4);background:rgba(184,137,42,.06)}
+.k-btn--ghost{background:transparent;color:var(--color-gold-500);border:1px solid var(--border-default)}
+.k-btn--ghost:hover{background:var(--color-hover-bg);border-color:var(--border-strong)}
+.k-btn--sm{padding:var(--space-1) var(--space-3);font-size:var(--text-xs)}
+.k-btn--lg{padding:var(--space-3) var(--space-8);font-size:var(--text-base)}
+
+.k-stat{text-align:center}
+.k-stat__number{font-family:var(--font-display);font-size:clamp(1.5rem,4vw,2.5rem);font-weight:var(--weight-bold);color:var(--color-gold-400);line-height:1}
+.k-stat__label{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:var(--tracking-wider);text-transform:uppercase;color:rgba(245,240,230,.4);margin-top:var(--space-2)}
+.k-stat--ink .k-stat__number{color:var(--color-gold-500)}
+.k-stat--ink .k-stat__label{color:var(--text-muted)}
+
+.k-section-tag{font-family:var(--font-mono);font-size:.68rem;letter-spacing:var(--tracking-widest);text-transform:uppercase;color:var(--color-gold-500);margin-bottom:var(--space-2)}
+.k-section-title{font-family:var(--font-display);font-size:var(--text-3xl);color:var(--text-primary);line-height:var(--leading-snug)}
+
+.k-input{background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-md);font-family:var(--font-body);font-size:var(--text-md);color:var(--text-primary);padding:var(--space-3) var(--space-4);width:100%;transition:var(--transition-base);outline:none}
+.k-input:focus{border-color:var(--color-gold-500);box-shadow:0 0 0 3px var(--color-focus-ring)}
+.k-input::placeholder{color:var(--text-muted)}
+.k-select{appearance:none;background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:var(--text-sm);color:var(--text-primary);padding:var(--space-3) 2.5rem var(--space-3) var(--space-4);cursor:pointer;transition:var(--transition-base);outline:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a8070' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right var(--space-3) center}
+.k-select:focus{border-color:var(--color-gold-500);box-shadow:0 0 0 3px var(--color-focus-ring)}
+.k-label{display:block;font-family:var(--font-mono);font-size:.65rem;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--text-muted);margin-bottom:var(--space-2)}
+
+.k-ms-card{background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;cursor:pointer;transition:var(--transition-base);position:relative;display:flex;flex-direction:column;text-decoration:none}
+.k-ms-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
+.k-ms-card__img{aspect-ratio:3/4;background:var(--color-ink-600);overflow:hidden;position:relative;flex-shrink:0}
+.k-ms-card__img::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(184,137,42,.06) 0%,transparent 50%,rgba(26,28,36,.5) 100%);pointer-events:none}
+.k-ms-card__img-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(245,240,230,.1)}
+.k-ms-card__svg{opacity:.12}
+.k-ms-card__badge{position:absolute;top:var(--space-3);left:var(--space-3);z-index:1}
+.k-ms-card__body{padding:var(--space-4) var(--space-5) var(--space-5);flex:1;display:flex;flex-direction:column}
+.k-ms-card__id{font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted);letter-spacing:.08em;margin-bottom:var(--space-1)}
+.k-ms-card__title{font-family:var(--font-display);font-size:.95rem;font-weight:var(--weight-semibold);color:var(--text-primary);line-height:1.3;margin-bottom:var(--space-2);flex:1}
+.k-ms-card__meta{display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);margin-top:auto}
+.k-ms-card__date{font-family:var(--font-mono);font-size:.65rem;color:var(--text-muted);letter-spacing:.06em}
+.k-ms-card__type{font-family:var(--font-body);font-size:.72rem;font-style:italic;color:var(--text-sepia)}
+
+.k-info-card{background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-6)}
+.k-info-card__label{font-family:var(--font-mono);font-size:.65rem;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--color-gold-500);margin-bottom:var(--space-3)}
+.k-info-card__content{font-size:.88rem;color:rgba(26,28,36,.75);line-height:1.6}
+
+.k-bio-card{background:rgba(245,240,230,.04);border:1px solid var(--border-dark);border-radius:var(--radius-md);padding:var(--space-5);cursor:pointer;transition:var(--transition-base);display:flex;align-items:flex-start;gap:var(--space-4);text-decoration:none}
+.k-bio-card:hover{background:var(--color-hover-bg-dark);border-color:rgba(184,137,42,.35);transform:translateY(-2px)}
+.k-bio-card__initial{width:44px;height:44px;flex-shrink:0;border:1px solid rgba(184,137,42,.3);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--color-gold-400);background:rgba(184,137,42,.06)}
+.k-bio-card__name{font-family:var(--font-body);font-size:.88rem;font-weight:var(--weight-medium);color:rgba(245,240,230,.85);line-height:1.3;margin-bottom:var(--space-1)}
+.k-bio-card__role{font-family:var(--font-body);font-size:.75rem;font-style:italic;color:rgba(245,240,230,.35)}
+
+.k-viewer{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:8px;overflow:hidden;border:1px solid rgba(184,137,42,.2);min-height:420px}
+.k-viewer__pane{background:rgba(245,240,230,.03);display:flex;flex-direction:column}
+.k-viewer__pane-header{display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) var(--space-5);border-bottom:1px solid rgba(184,137,42,.12);background:rgba(245,240,230,.04);flex-shrink:0}
+.k-viewer__pane-label{font-family:var(--font-mono);font-size:.68rem;letter-spacing:var(--tracking-wider);text-transform:uppercase;color:var(--color-gold-500)}
+.k-viewer__pane-actions{display:flex;gap:var(--space-2)}
+.k-viewer__img-area{flex:1;display:flex;align-items:center;justify-content:center;padding:var(--space-8);overflow:hidden;min-height:200px}
+.k-viewer__text-area{flex:1;overflow-y:auto;padding:var(--space-6)}
+.k-viewer__text-content{font-family:var(--font-body);font-size:.9rem;line-height:var(--leading-loose);color:rgba(245,240,230,.7)}
+.k-viewer__text-content p{margin-bottom:1.2em}
+.k-viewer__text-content em{color:var(--color-gold-400);font-style:italic}
+.k-viewer__meta{display:flex;flex-wrap:wrap;gap:var(--space-6);padding:var(--space-4) var(--space-5);border-top:1px solid rgba(184,137,42,.1);background:rgba(245,240,230,.02);flex-shrink:0}
+.k-viewer__meta-key{font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,230,.3);margin-bottom:var(--space-1)}
+.k-viewer__meta-val{font-family:var(--font-body);font-size:.8rem;color:rgba(245,240,230,.7);font-style:italic}
+
+/* search */
+.k-search__box{display:flex;background:rgba(245,240,230,.07);border:1px solid rgba(184,137,42,.4);border-radius:var(--radius-full);transition:var(--transition-base)}
+.k-search__box:focus-within{border-color:var(--color-gold-500);background:rgba(245,240,230,.1);box-shadow:var(--shadow-focus)}
+.k-search__input{flex:1;background:none;border:none;outline:none;font-family:var(--font-body);font-size:1rem;font-style:italic;color:var(--color-parchment-200);padding:1rem 1.25rem;min-width:0}
+.k-search__input::placeholder{color:rgba(245,240,230,.35);font-style:italic}
+.k-search__btn{background:var(--color-gold-500);border:none;cursor:pointer;border-radius:0 var(--radius-full) var(--radius-full) 0;padding:0 1.5rem;color:var(--color-ink-800);font-family:var(--font-mono);font-size:var(--text-sm);letter-spacing:.12em;text-transform:uppercase;transition:var(--transition-base);display:flex;align-items:center;gap:var(--space-2);white-space:nowrap}
+.k-search__btn:hover{background:var(--color-gold-400)}
+
+/* page-header */
+.k-page-header{background:var(--surface-dark);padding:2.5rem var(--section-px) 2rem;position:relative;overflow:hidden}
+.k-page-header::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 100%,rgba(184,137,42,.06) 0%,transparent 70%);pointer-events:none}
+.k-page-header__inner{position:relative;z-index:1}
+.k-page-header__eyebrow{font-family:var(--font-mono);font-size:var(--text-sm);letter-spacing:var(--tracking-widest);text-transform:uppercase;color:var(--color-gold-500);margin-bottom:var(--space-3)}
+.k-page-header__title{font-family:var(--font-display);font-size:clamp(1.8rem,5vw,3.5rem);color:var(--color-parchment-200);line-height:var(--leading-tight);margin-bottom:var(--space-3)}
+.k-page-header__desc{font-size:clamp(.9rem,2vw,1.1rem);color:var(--text-on-dark-muted);font-style:italic}
+
+@media(max-width:900px){.docs-wrap{grid-template-columns:1fr}.docs-sidebar{display:none}.docs-main{padding:2rem 1.5rem 4rem}.k-viewer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="docs-wrap">
+
+  <!-- SIDEBAR -->
+  <aside class="docs-sidebar">
+    <div class="docs-sidebar-logo">
+      <div class="docs-sidebar-logo-mark">K</div>
+      <div class="docs-sidebar-logo-text">
+        Kardec DS
+        <small>Design System v1.0</small>
+      </div>
+    </div>
+
+    <div class="docs-nav-group">
+      <div class="docs-nav-label">Fundação</div>
+      <a href="#tokens"     class="docs-nav-link">Tokens</a>
+      <a href="#colors"     class="docs-nav-link">Cores</a>
+      <a href="#typography" class="docs-nav-link">Tipografia</a>
+      <a href="#spacing"    class="docs-nav-link">Espaçamento</a>
+    </div>
+
+    <div class="docs-nav-group">
+      <div class="docs-nav-label">Componentes</div>
+      <a href="#badge"     class="docs-nav-link">Badge</a>
+      <a href="#chip"      class="docs-nav-link">Chip</a>
+      <a href="#button"    class="docs-nav-link">Button</a>
+      <a href="#stat"      class="docs-nav-link">Stat</a>
+      <a href="#search"    class="docs-nav-link">Search Box</a>
+      <a href="#ms-card"   class="docs-nav-link">Manuscript Card</a>
+      <a href="#viewer"    class="docs-nav-link">Viewer</a>
+      <a href="#bio-card"  class="docs-nav-link">Bio Card</a>
+      <a href="#info-card" class="docs-nav-link">Info Card</a>
+      <a href="#page-hdr"  class="docs-nav-link">Page Header</a>
+      <a href="#section"   class="docs-nav-link">Section Header</a>
+      <a href="#forms"     class="docs-nav-link">Forms</a>
+    </div>
+
+    <div class="docs-nav-group">
+      <div class="docs-nav-label">Blade</div>
+      <a href="#blade-usage" class="docs-nav-link">Como usar</a>
+      <a href="#blade-list"  class="docs-nav-link">Lista de componentes</a>
+    </div>
+  </aside>
+
+  <!-- MAIN DOCS -->
+  <main class="docs-main">
+
+    <!-- INTRO -->
+    <div style="margin-bottom:4rem;padding-bottom:2rem;border-bottom:1px solid var(--border-default)">
+      <p style="font-family:var(--font-mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--color-gold-500);margin-bottom:.75rem">Projeto Allan Kardec · UFJF</p>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin-bottom:1rem">
+        Kardec<br><em style="color:var(--color-gold-500)">Design System</em>
+      </h1>
+      <p style="font-size:1.05rem;color:rgba(26,28,36,.7);max-width:560px;line-height:1.7;margin-bottom:1.5rem">
+        Sistema de design editorial para o Projeto Allan Kardec.
+        Tokens, componentes CSS e Blade Components para Laravel,
+        construídos sobre uma estética de arquivo histórico refinada.
+      </p>
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <span class="k-badge k-badge--gold">v 1.0</span>
+        <span class="k-badge k-badge--parchment">Laravel Blade</span>
+        <span class="k-badge k-badge--outline">CSS Custom Properties</span>
+        <span class="k-badge k-badge--outline">Alpine.js ready</span>
+      </div>
+    </div>
+
+    <!-- FILES -->
+    <div class="doc-section" id="tokens">
+      <h2 class="doc-section-title"><small>Estrutura</small>Arquivos CSS</h2>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Importar em ordem</div>
+        <div class="doc-code"><span class="comment">/* resources/css/app.css — ou via Vite */</span>
+@import '<span class="val">kardec-tokens.css</span>';      <span class="comment">/* 1. Custom properties */</span>
+@import '<span class="val">kardec-base.css</span>';        <span class="comment">/* 2. Reset + tipografia + utilitários */</span>
+@import '<span class="val">kardec-components.css</span>';  <span class="comment">/* 3. Todos os componentes */</span></div>
+      </div>
+
+      <table class="prop-table" style="margin-top:1.5rem">
+        <thead><tr><th>Arquivo</th><th>Responsabilidade</th><th>Alterar aqui para...</th></tr></thead>
+        <tbody>
+          <tr><td class="prop-name">kardec-tokens.css</td><td>CSS custom properties (valores brutos e semânticos)</td><td>Rebranding completo — mudar paleta, fontes, raios</td></tr>
+          <tr><td class="prop-name">kardec-base.css</td><td>Reset, tipografia global, utilitários, animações</td><td>Comportamento de scroll, estilos de foco, utilitários</td></tr>
+          <tr><td class="prop-name">kardec-components.css</td><td>Todos os componentes UI com classes <code>.k-*</code></td><td>Aparência de um componente específico</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- COLORS -->
+    <div class="doc-section" id="colors">
+      <h2 class="doc-section-title"><small>Tokens</small>Paleta de Cores</h2>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Família Ink (superfícies escuras)</div>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch__color" style="background:#0f1016"></div><div class="swatch__info"><div class="swatch__name">ink-900</div><div class="swatch__value">#0f1016</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#1a1c24"></div><div class="swatch__info"><div class="swatch__name">ink-800</div><div class="swatch__value">#1a1c24</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#2e3245"></div><div class="swatch__info"><div class="swatch__name">ink-600</div><div class="swatch__value">#2e3245</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#3d4260"></div><div class="swatch__info"><div class="swatch__name">ink-500</div><div class="swatch__value">#3d4260</div></div></div>
+        </div>
+      </div>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Família Parchment (superfícies claras)</div>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch__color" style="background:#faf8f3;border:1px solid #ddd"></div><div class="swatch__info"><div class="swatch__name">parchment-100</div><div class="swatch__value">#faf8f3</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#f5f0e6;border:1px solid #ddd"></div><div class="swatch__info"><div class="swatch__name">parchment-200</div><div class="swatch__value">#f5f0e6</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#ede5d0"></div><div class="swatch__info"><div class="swatch__name">parchment-300</div><div class="swatch__value">#ede5d0</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#d9ccb0"></div><div class="swatch__info"><div class="swatch__name">parchment-400</div><div class="swatch__value">#d9ccb0</div></div></div>
+        </div>
+      </div>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Família Gold (acento principal)</div>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch__color" style="background:#e8c97a"></div><div class="swatch__info"><div class="swatch__name">gold-300</div><div class="swatch__value">#e8c97a</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#d4a94a"></div><div class="swatch__info"><div class="swatch__name">gold-400</div><div class="swatch__value">#d4a94a</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#b8892a"></div><div class="swatch__info"><div class="swatch__name">gold-500 ★</div><div class="swatch__value">#b8892a</div></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#7a5c1e"></div><div class="swatch__info"><div class="swatch__name">gold-700</div><div class="swatch__value">#7a5c1e</div></div></div>
+        </div>
+      </div>
+
+      <div class="doc-subsection" style="margin-top:2rem">
+        <div class="doc-subsection-title">Papéis semânticos (use estes no CSS)</div>
+        <table class="prop-table">
+          <thead><tr><th>Token</th><th>Valor</th><th>Uso</th></tr></thead>
+          <tbody>
+            <tr><td class="prop-name">--surface-page</td><td class="prop-type">parchment-100</td><td>Fundo do body / páginas</td></tr>
+            <tr><td class="prop-name">--surface-card</td><td class="prop-type">parchment-200</td><td>Cards, painéis, inputs</td></tr>
+            <tr><td class="prop-name">--surface-dark</td><td class="prop-type">ink-800</td><td>Seções escuras (hero, viewer)</td></tr>
+            <tr><td class="prop-name">--text-primary</td><td class="prop-type">ink-800</td><td>Texto principal em fundo claro</td></tr>
+            <tr><td class="prop-name">--text-on-dark</td><td class="prop-type">parchment-200</td><td>Texto em fundo escuro</td></tr>
+            <tr><td class="prop-name">--text-accent</td><td class="prop-type">gold-500</td><td>Labels, seção-tags, ícones</td></tr>
+            <tr><td class="prop-name">--text-sepia</td><td class="prop-type">gold-700</td><td>Categoria / labels em itálico</td></tr>
+            <tr><td class="prop-name">--text-muted</td><td class="prop-type">neutral-500</td><td>Metadados, captions</td></tr>
+            <tr><td class="prop-name">--border-default</td><td class="prop-type">gold 22% opacity</td><td>Bordas de cards normais</td></tr>
+            <tr><td class="prop-name">--border-strong</td><td class="prop-type">gold 45% opacity</td><td>Hover / focus de cards</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="doc-section" id="typography">
+      <h2 class="doc-section-title"><small>Tokens</small>Tipografia</h2>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Famílias tipográficas</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem">
+          <div class="k-info-card">
+            <div class="k-info-card__label">--font-display</div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.6rem;line-height:1.2;margin-bottom:.5rem">Playfair Display</div>
+            <div style="font-family:'Playfair Display',serif;font-style:italic;color:var(--color-gold-700)">Headings · Títulos · Logo</div>
+          </div>
+          <div class="k-info-card">
+            <div class="k-info-card__label">--font-body</div>
+            <div style="font-family:'Spectral',serif;font-size:1.3rem;margin-bottom:.5rem">Spectral</div>
+            <div style="font-family:'Spectral',serif;font-style:italic;color:var(--color-gold-700)">Body · Transcrições · Parágrafos</div>
+          </div>
+          <div class="k-info-card">
+            <div class="k-info-card__label">--font-mono</div>
+            <div style="font-family:'DM Mono',monospace;font-size:1rem;margin-bottom:.5rem;letter-spacing:.04em">DM Mono</div>
+            <div style="font-family:'DM Mono',monospace;color:var(--color-gold-700);font-size:.8rem;letter-spacing:.08em">LABELS · BADGES · METADADOS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Escala de tamanhos</div>
+        <div class="k-info-card">
+          <div class="type-row"><span class="type-label">text-xs / .6rem</span><span class="type-sample" style="font-size:.6rem;font-family:var(--font-mono);letter-spacing:.12em;text-transform:uppercase">ACERVO MUSEU AKOL</span></div>
+          <div class="type-row"><span class="type-label">text-sm / .72rem</span><span class="type-sample" style="font-size:.72rem;font-family:var(--font-mono);letter-spacing:.1em;text-transform:uppercase">MANUSCRITOS RECENTES</span></div>
+          <div class="type-row"><span class="type-label">text-base / .88rem</span><span class="type-sample" style="font-size:.88rem">Carta a Eugène Vézy — c. 1858</span></div>
+          <div class="type-row"><span class="type-label">text-md / 1rem</span><span class="type-sample">Carta a Eugène Vézy — c. 1858</span></div>
+          <div class="type-row"><span class="type-label">text-lg / 1.2rem</span><span class="type-sample" style="font-size:1.2rem;font-style:italic">Acervo digital de documentos originais de Allan Kardec</span></div>
+          <div class="type-row"><span class="type-label">text-xl / 1.5rem</span><span class="type-sample" style="font-size:1.5rem;font-family:var(--font-display)">Biografias</span></div>
+          <div class="type-row"><span class="type-label">text-2xl / 2rem</span><span class="type-sample" style="font-size:2rem;font-family:var(--font-display)">O Projeto</span></div>
+          <div class="type-row"><span class="type-label">text-3xl / fluid</span><span class="type-sample" style="font-size:clamp(1.6rem,4vw,2.5rem);font-family:var(--font-display)">Manuscritos Recentes</span></div>
+          <div class="type-row"><span class="type-label">text-4xl / fluid</span><span class="type-sample" style="font-size:clamp(2.4rem,6vw,4rem);font-family:var(--font-display)">Manuscritos</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPACING -->
+    <div class="doc-section" id="spacing">
+      <h2 class="doc-section-title"><small>Tokens</small>Espaçamento</h2>
+      <div class="k-info-card">
+        <div class="space-row"><span class="space-label">--space-1 / 4px</span><div class="space-bar" style="width:4px"></div></div>
+        <div class="space-row"><span class="space-label">--space-2 / 8px</span><div class="space-bar" style="width:8px"></div></div>
+        <div class="space-row"><span class="space-label">--space-3 / 12px</span><div class="space-bar" style="width:12px"></div></div>
+        <div class="space-row"><span class="space-label">--space-4 / 16px</span><div class="space-bar" style="width:16px"></div></div>
+        <div class="space-row"><span class="space-label">--space-6 / 24px</span><div class="space-bar" style="width:24px"></div></div>
+        <div class="space-row"><span class="space-label">--space-8 / 32px</span><div class="space-bar" style="width:32px"></div></div>
+        <div class="space-row"><span class="space-label">--space-12 / 48px</span><div class="space-bar" style="width:48px"></div></div>
+        <div class="space-row"><span class="space-label">--space-16 / 64px</span><div class="space-bar" style="width:64px"></div></div>
+        <div class="space-row"><span class="space-label">--section-py / fluid</span><div class="space-bar" style="width:80px;opacity:.9"></div><span style="font-size:.7rem;color:var(--text-muted);font-family:var(--font-mono)">clamp(4rem,8vw,8rem)</span></div>
+      </div>
+    </div>
+
+    <!-- BADGE -->
+    <div class="doc-section" id="badge">
+      <h2 class="doc-section-title"><small>Componente</small>Badge</h2>
+      <p style="margin-bottom:1.5rem;color:var(--text-muted);font-size:.9rem">Tags pequenas para identificar acervos, categorias e estados.</p>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Variantes</div>
+        <div class="doc-preview doc-preview--grid">
+          <span class="k-badge k-badge--default">Museu AKOL</span>
+          <span class="k-badge k-badge--gold">Novo</span>
+          <span class="k-badge k-badge--outline">Carta</span>
+          <span class="k-badge k-badge--parchment">Dissertação</span>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-badge</span>&gt;Museu AKOL&lt;/<span class="tag">x-badge</span>&gt;
+&lt;<span class="tag">x-badge</span> <span class="attr">variant</span>=<span class="val">"gold"</span>&gt;Novo&lt;/<span class="tag">x-badge</span>&gt;
+&lt;<span class="tag">x-badge</span> <span class="attr">variant</span>=<span class="val">"outline"</span>&gt;Carta&lt;/<span class="tag">x-badge</span>&gt;
+&lt;<span class="tag">x-badge</span> <span class="attr">variant</span>=<span class="val">"parchment"</span>&gt;Dissertação&lt;/<span class="tag">x-badge</span>&gt;</div>
+      </div>
+    </div>
+
+    <!-- CHIP -->
+    <div class="doc-section" id="chip">
+      <h2 class="doc-section-title"><small>Componente</small>Chip</h2>
+      <p style="margin-bottom:1.5rem;color:var(--text-muted);font-size:.9rem">Pills de filtro — dark (para fundos escuros) e light (para fundos claros).</p>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Variante Dark (hero / seções escuras)</div>
+        <div class="doc-preview doc-preview--dark doc-preview--grid">
+          <button class="k-chip k-chip--dark is-active">Todos</button>
+          <button class="k-chip k-chip--dark">Cartas</button>
+          <button class="k-chip k-chip--dark">Dissertações</button>
+          <button class="k-chip k-chip--dark"><span class="k-chip__dot" style="background:#b8892a"></span>Comunicações</button>
+        </div>
+        <div class="doc-subsection-title" style="margin-top:1.5rem">Variante Light (seções claras)</div>
+        <div class="doc-preview doc-preview--grid">
+          <button class="k-chip k-chip--light is-active">Todos</button>
+          <button class="k-chip k-chip--light"><span class="k-chip__dot" style="background:#b8892a"></span>Carta</button>
+          <button class="k-chip k-chip--light"><span class="k-chip__dot" style="background:#7d3b2a"></span>Dissertação</button>
+          <button class="k-chip k-chip--light"><span class="k-chip__dot" style="background:#3a5a7d"></span>Comunicação</button>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-chip</span> <span class="attr">label</span>=<span class="val">"Todos"</span> <span class="attr">value</span>=<span class="val">""</span> <span class="attr">:active</span>=<span class="val">"true"</span> /&gt;
+&lt;<span class="tag">x-chip</span> <span class="attr">label</span>=<span class="val">"Cartas"</span> <span class="attr">value</span>=<span class="val">"carta"</span> /&gt;
+&lt;<span class="tag">x-chip</span> <span class="attr">label</span>=<span class="val">"Cartas"</span> <span class="attr">value</span>=<span class="val">"carta"</span> <span class="attr">dot-color</span>=<span class="val">"#b8892a"</span> <span class="attr">variant</span>=<span class="val">"light"</span> /&gt;</div>
+      </div>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="doc-section" id="button">
+      <h2 class="doc-section-title"><small>Componente</small>Button</h2>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Variantes (fundo claro)</div>
+        <div class="doc-preview doc-preview--grid">
+          <button class="k-btn k-btn--primary">Pesquisar</button>
+          <button class="k-btn k-btn--ghost">Ver todos</button>
+          <button class="k-btn k-btn--sm k-btn--ghost">Filtrar</button>
+          <button class="k-btn k-btn--lg k-btn--primary">Explorar acervo</button>
+        </div>
+        <div class="doc-subsection-title" style="margin-top:1.5rem">Variantes (fundo escuro)</div>
+        <div class="doc-preview doc-preview--dark doc-preview--grid">
+          <button class="k-btn k-btn--ghost-dark">PT</button>
+          <button class="k-btn k-btn--ghost-dark is-active">FR</button>
+          <button class="k-btn k-btn--primary">Pesquisar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAT -->
+    <div class="doc-section" id="stat">
+      <h2 class="doc-section-title"><small>Componente</small>Stat</h2>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Dark (hero)</div>
+        <div class="doc-preview doc-preview--dark" style="display:flex;gap:3rem;justify-content:center">
+          <div class="k-stat"><div class="k-stat__number">600+</div><div class="k-stat__label">Manuscritos</div></div>
+          <div class="k-stat"><div class="k-stat__number">3</div><div class="k-stat__label">Acervos</div></div>
+          <div class="k-stat"><div class="k-stat__number">1800–1869</div><div class="k-stat__label">Período</div></div>
+        </div>
+        <div class="doc-subsection-title" style="margin-top:1.5rem">Light (--ink variant)</div>
+        <div class="doc-preview" style="display:flex;gap:3rem;justify-content:center">
+          <div class="k-stat k-stat--ink"><div class="k-stat__number">600+</div><div class="k-stat__label">Manuscritos</div></div>
+          <div class="k-stat k-stat--ink"><div class="k-stat__number">3</div><div class="k-stat__label">Acervos</div></div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-stat</span> <span class="attr">number</span>=<span class="val">"600+"</span> <span class="attr">label</span>=<span class="val">"Manuscritos"</span> /&gt;
+&lt;<span class="tag">x-stat</span> <span class="attr">number</span>=<span class="val">"600+"</span> <span class="attr">label</span>=<span class="val">"Manuscritos"</span> <span class="attr">variant</span>=<span class="val">"ink"</span> /&gt;</div>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="doc-section" id="search">
+      <h2 class="doc-section-title"><small>Componente</small>Search Box</h2>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Dark variant (hero)</div>
+        <div class="doc-preview doc-preview--dark">
+          <div class="k-search__box">
+            <input class="k-search__input" placeholder="Pesquise por palavras, frases ou identificadores..." type="search">
+            <button class="k-search__btn">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.4"/><line x1="9.5" y1="9.5" x2="12.5" y2="12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Pesquisar
+            </button>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-search-box</span>
+    <span class="attr">placeholder</span>=<span class="val">"Pesquise por palavras..."</span>
+    <span class="attr">:action</span>=<span class="val">"route('pesquisar')"</span>
+    <span class="attr">:value</span>=<span class="val">"request('q')"</span>
+/&gt;</div>
+      </div>
+    </div>
+
+    <!-- MANUSCRIPT CARD -->
+    <div class="doc-section" id="ms-card">
+      <h2 class="doc-section-title"><small>Componente</small>Manuscript Card</h2>
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Card com placeholder</div>
+        <div class="doc-preview" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;max-width:700px">
+          <article class="k-ms-card">
+            <div class="k-ms-card__img">
+              <div class="k-ms-card__img-inner">
+                <svg width="60" height="75" viewBox="0 0 80 100" fill="none" class="k-ms-card__svg"><rect x="10" y="8" width="60" height="84" rx="2" stroke="#b8892a" stroke-width="1"/><line x1="16" y1="22" x2="64" y2="22" stroke="#b8892a" stroke-width="0.8" opacity=".5"/><line x1="16" y1="27" x2="55" y2="27" stroke="#b8892a" stroke-width="0.8" opacity=".54"/><line x1="16" y1="32" x2="64" y2="32" stroke="#b8892a" stroke-width="0.8" opacity=".58"/><line x1="16" y1="37" x2="64" y2="37" stroke="#b8892a" stroke-width="0.8" opacity=".62"/></svg>
+              </div>
+              <span class="k-ms-card__badge"><span class="k-badge k-badge--default">Museu AKOL</span></span>
+            </div>
+            <div class="k-ms-card__body">
+              <div class="k-ms-card__id">Nº 108</div>
+              <h3 class="k-ms-card__title">Carta a Eugène Vézy</h3>
+              <div class="k-ms-card__meta">
+                <span class="k-ms-card__date">c. 1858</span>
+                <span class="k-ms-card__type">Carta</span>
+              </div>
+            </div>
+          </article>
+          <article class="k-ms-card">
+            <div class="k-ms-card__img">
+              <div class="k-ms-card__img-inner">
+                <svg width="60" height="75" viewBox="0 0 80 100" fill="none" class="k-ms-card__svg"><rect x="10" y="8" width="60" height="84" rx="2" stroke="#7d3b2a" stroke-width="1"/><line x1="16" y1="22" x2="55" y2="22" stroke="#7d3b2a" stroke-width="0.8" opacity=".5"/><line x1="16" y1="27" x2="64" y2="27" stroke="#7d3b2a" stroke-width="0.8" opacity=".54"/><line x1="16" y1="32" x2="64" y2="32" stroke="#7d3b2a" stroke-width="0.8" opacity=".58"/></svg>
+              </div>
+              <span class="k-ms-card__badge"><span class="k-badge k-badge--default">FEAL</span></span>
+            </div>
+            <div class="k-ms-card__body">
+              <div class="k-ms-card__id">Nº 245</div>
+              <h3 class="k-ms-card__title">Dissertação sobre médiuns</h3>
+              <div class="k-ms-card__meta">
+                <span class="k-ms-card__date">c. 1860</span>
+                <span class="k-ms-card__type">Dissertação</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-manuscript-card</span>
+    <span class="attr">:id</span>=<span class="val">"$manuscript->identifier"</span>
+    <span class="attr">:title</span>=<span class="val">"$manuscript->title"</span>
+    <span class="attr">:acervo</span>=<span class="val">"$manuscript->acervo->name"</span>
+    <span class="attr">:year</span>=<span class="val">"$manuscript->year_label"</span>
+    <span class="attr">:category</span>=<span class="val">"$manuscript->category"</span>
+    <span class="attr">:href</span>=<span class="val">"route('manuscritos.show', $manuscript)"</span>
+    <span class="attr">:image-url</span>=<span class="val">"$manuscript->thumbnail_url"</span>
+/&gt;</div>
+      </div>
+    </div>
+
+    <!-- VIEWER -->
+    <div class="doc-section" id="viewer">
+      <h2 class="doc-section-title"><small>Componente</small>Viewer</h2>
+      <div class="doc-subsection">
+        <div class="doc-preview doc-preview--dark" style="padding:0">
+          <div class="k-viewer">
+            <div class="k-viewer__pane">
+              <div class="k-viewer__pane-header">
+                <span class="k-viewer__pane-label">Manuscrito Original</span>
+                <div class="k-viewer__pane-actions">
+                  <button class="k-btn k-btn--ghost-dark k-btn--sm">−</button>
+                  <button class="k-btn k-btn--ghost-dark k-btn--sm">100%</button>
+                  <button class="k-btn k-btn--ghost-dark k-btn--sm">+</button>
+                </div>
+              </div>
+              <div class="k-viewer__img-area">
+                <div style="width:100%;max-width:180px;aspect-ratio:3/4;background:linear-gradient(145deg,#2a2420,#1e1a16);border:1px solid rgba(184,137,42,.15);border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;">
+                  <span style="font-family:var(--font-mono);font-size:.55rem;color:rgba(184,137,42,.3);letter-spacing:.1em;text-transform:uppercase">Imagem</span>
+                </div>
+              </div>
+              <div class="k-viewer__meta">
+                <div><div class="k-viewer__meta-key">Identificador</div><div class="k-viewer__meta-val">108</div></div>
+                <div><div class="k-viewer__meta-key">Acervo</div><div class="k-viewer__meta-val">Museu AKOL</div></div>
+                <div><div class="k-viewer__meta-key">Ano</div><div class="k-viewer__meta-val">c. 1858</div></div>
+              </div>
+            </div>
+            <div class="k-viewer__pane">
+              <div class="k-viewer__pane-header">
+                <span class="k-viewer__pane-label">Transcrição</span>
+                <div class="k-viewer__pane-actions">
+                  <button class="k-btn k-btn--ghost-dark k-btn--sm">PT</button>
+                  <button class="k-btn k-btn--ghost-dark k-btn--sm">FR</button>
+                </div>
+              </div>
+              <div class="k-viewer__text-area">
+                <div class="k-viewer__text-content">
+                  <p><em>Paris, 12 de março de 1858.</em></p>
+                  <p>Meu caro amigo, recebi com grande satisfação a vossa carta de fevereiro último…</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-viewer</span>
+    <span class="attr">:meta-id</span>=<span class="val">"$ms->identifier"</span>
+    <span class="attr">:meta-acervo</span>=<span class="val">"$ms->acervo->name"</span>
+    <span class="attr">:meta-ano</span>=<span class="val">"$ms->year_label"</span>
+    <span class="attr">:image-url</span>=<span class="val">"$ms->image_url"</span>
+&gt;
+    &lt;<span class="tag">x-slot:transcript</span>&gt;
+        {!! $ms->transcript_html !!}
+    &lt;/<span class="tag">x-slot:transcript</span>&gt;
+&lt;/<span class="tag">x-viewer</span>&gt;</div>
+      </div>
+    </div>
+
+    <!-- BIO CARD -->
+    <div class="doc-section" id="bio-card">
+      <h2 class="doc-section-title"><small>Componente</small>Bio Card</h2>
+      <div class="doc-subsection">
+        <div class="doc-preview doc-preview--dark" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem">
+          <div class="k-bio-card"><div class="k-bio-card__initial">A</div><div><div class="k-bio-card__name">Allan Kardec</div><div class="k-bio-card__role">Autor principal · 1804–1869</div></div></div>
+          <div class="k-bio-card"><div class="k-bio-card__initial">É</div><div><div class="k-bio-card__name">Émile Sabò</div><div class="k-bio-card__role">Colaborador</div></div></div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-bio-card</span>
+    <span class="attr">name</span>=<span class="val">"Allan Kardec"</span>
+    <span class="attr">role</span>=<span class="val">"Autor principal · 1804–1869"</span>
+    <span class="attr">:href</span>=<span class="val">"route('biografias.show', $bio)"</span>
+/&gt;</div>
+      </div>
+    </div>
+
+    <!-- INFO CARD -->
+    <div class="doc-section" id="info-card">
+      <h2 class="doc-section-title"><small>Componente</small>Info Card</h2>
+      <div class="doc-subsection">
+        <div class="doc-preview" style="max-width:480px">
+          <div class="k-info-card">
+            <div class="k-info-card__label">Categorias documentais</div>
+            <div class="k-info-card__content">Carta · Comunicação · Cópia de carta · Discurso · Dissertação · Escritura · Evocação · Fragmento · Inventário · Nota · Prece · Psicografia</div>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="val">"k-info-card"</span>&gt;
+    &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="val">"k-info-card__label"</span>&gt;Categorias&lt;/<span class="tag">div</span>&gt;
+    &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="val">"k-info-card__content"</span>&gt;…&lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">div</span>&gt;</div>
+      </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="doc-section" id="page-hdr">
+      <h2 class="doc-section-title"><small>Componente</small>Page Header</h2>
+      <div class="doc-subsection">
+        <div style="border-radius:var(--radius-md);overflow:hidden;margin-bottom:.75rem">
+          <div class="k-page-header">
+            <div class="k-page-header__inner">
+              <p class="k-page-header__eyebrow">Acervo</p>
+              <h1 class="k-page-header__title">Manuscritos</h1>
+              <p class="k-page-header__desc">Documentos originais de Allan Kardec disponíveis para consulta.</p>
+            </div>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-page-header</span>
+    <span class="attr">eyebrow</span>=<span class="val">"Acervo"</span>
+    <span class="attr">title</span>=<span class="val">"Manuscritos"</span>
+    <span class="attr">description</span>=<span class="val">"Documentos originais..."</span>
+/&gt;</div>
+      </div>
+    </div>
+
+    <!-- SECTION HEADER -->
+    <div class="doc-section" id="section">
+      <h2 class="doc-section-title"><small>Componente</small>Section Header</h2>
+      <div class="doc-subsection">
+        <div class="doc-preview">
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+            <div><p class="k-section-tag">Acervo</p><h2 class="k-section-title">Manuscritos Recentes</h2></div>
+            <a href="#" style="display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--color-gold-500)">Ver todos <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><line x1="2" y1="7" x2="12" y2="7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><polyline points="8,3 12,7 8,11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">x-section-header</span>
+    <span class="attr">tag</span>=<span class="val">"Acervo"</span>
+    <span class="attr">title</span>=<span class="val">"Manuscritos Recentes"</span>
+    <span class="attr">link-text</span>=<span class="val">"Ver todos"</span>
+    <span class="attr">:link-href</span>=<span class="val">"route('manuscritos.index')"</span>
+/&gt;
+
+<span class="comment">{{-- Dark section --}}</span>
+&lt;<span class="tag">x-section-header</span>
+    <span class="attr">tag</span>=<span class="val">"Visualizador"</span>
+    <span class="attr">title</span>=<span class="val">"Imagem &amp;amp; Transcrição"</span>
+    <span class="attr">:inverted</span>=<span class="val">"true"</span>
+/&gt;</div>
+      </div>
+    </div>
+
+    <!-- FORMS -->
+    <div class="doc-section" id="forms">
+      <h2 class="doc-section-title"><small>Componente</small>Form Elements</h2>
+      <div class="doc-subsection">
+        <div class="doc-preview" style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:600px">
+          <div>
+            <label class="k-label">Identificador</label>
+            <input class="k-input" type="text" placeholder="ex. 108">
+          </div>
+          <div>
+            <label class="k-label">Acervo</label>
+            <select class="k-select" style="width:100%">
+              <option>Selecione</option>
+              <option>Museu Allan Kardec</option>
+              <option>Acervo FEAL</option>
+              <option>CDOR</option>
+            </select>
+          </div>
+          <div>
+            <label class="k-label">Ano</label>
+            <select class="k-select" style="width:100%">
+              <option>Selecione</option>
+              <option>1856</option>
+              <option>1858</option>
+              <option>1860</option>
+            </select>
+          </div>
+          <div>
+            <label class="k-label">Categoria</label>
+            <select class="k-select" style="width:100%">
+              <option>Selecione</option>
+              <option>Carta</option>
+              <option>Dissertação</option>
+            </select>
+          </div>
+        </div>
+        <div class="doc-code">&lt;<span class="tag">label</span> <span class="attr">class</span>=<span class="val">"k-label"</span>&gt;Identificador&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">class</span>=<span class="val">"k-input"</span> <span class="attr">type</span>=<span class="val">"text"</span> <span class="attr">placeholder</span>=<span class="val">"ex. 108"</span>&gt;
+
+&lt;<span class="tag">label</span> <span class="attr">class</span>=<span class="val">"k-label"</span>&gt;Acervo&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">select</span> <span class="attr">class</span>=<span class="val">"k-select"</span>&gt;…&lt;/<span class="tag">select</span>&gt;</div>
+      </div>
+    </div>
+
+    <!-- BLADE USAGE -->
+    <div class="doc-section" id="blade-usage">
+      <h2 class="doc-section-title"><small>Laravel Blade</small>Como usar</h2>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Instalação</div>
+        <div class="doc-code"><span class="comment"># Copiar arquivos CSS para resources/css/</span>
+cp kardec-tokens.css     resources/css/
+cp kardec-base.css       resources/css/
+cp kardec-components.css resources/css/
+
+<span class="comment"># Copiar componentes para resources/views/components/</span>
+cp blade/components/*.blade.php resources/views/components/
+cp blade/layouts/app.blade.php  resources/views/layouts/
+
+<span class="comment"># Registrar CSS no vite.config.js</span>
+input: [
+  'resources/css/kardec-tokens.css',
+  'resources/css/kardec-base.css',
+  'resources/css/kardec-components.css',
+  'resources/js/app.js',
+]</div>
+      </div>
+
+      <div class="doc-subsection">
+        <div class="doc-subsection-title">Exemplo de página completa</div>
+        <div class="doc-code">&lt;<span class="tag">x-layouts.app</span> <span class="attr">title</span>=<span class="val">"Início"</span>&gt;
+
+    &lt;<span class="tag">x-hero</span>
+        <span class="attr">eyebrow</span>=<span class="val">"Projeto Allan Kardec · UFJF"</span>
+        <span class="attr">title</span>=<span class="val">"Manuscritos &lt;em&gt;&amp;amp; Transcrições&lt;/em&gt;"</span>
+        <span class="attr">subtitle</span>=<span class="val">"Acervo digital de documentos originais de Allan Kardec"</span>
+        <span class="attr">scroll-to</span>=<span class="val">"manuscritos"</span>
+    &gt;
+        &lt;<span class="tag">x-slot:search</span>&gt;
+            &lt;<span class="tag">x-search-box</span> <span class="attr">:action</span>=<span class="val">"route('pesquisar')"</span> /&gt;
+        &lt;/<span class="tag">x-slot:search</span>&gt;
+        &lt;<span class="tag">x-slot:filters</span>&gt;
+            &lt;<span class="tag">x-chip</span> <span class="attr">label</span>=<span class="val">"Todos"</span> <span class="attr">:active</span>=<span class="val">"true"</span> /&gt;
+            &lt;<span class="tag">x-chip</span> <span class="attr">label</span>=<span class="val">"Cartas"</span> <span class="attr">value</span>=<span class="val">"carta"</span> /&gt;
+        &lt;/<span class="tag">x-slot:filters</span>&gt;
+        &lt;<span class="tag">x-slot:stats</span>&gt;
+            &lt;<span class="tag">x-stat</span> <span class="attr">number</span>=<span class="val">"600+"</span> <span class="attr">label</span>=<span class="val">"Manuscritos"</span> /&gt;
+            &lt;<span class="tag">x-stat</span> <span class="attr">number</span>=<span class="val">"3"</span>    <span class="attr">label</span>=<span class="val">"Acervos"</span> /&gt;
+        &lt;/<span class="tag">x-slot:stats</span>&gt;
+    &lt;/<span class="tag">x-hero</span>&gt;
+
+    &lt;<span class="tag">x-section</span> <span class="attr">id</span>=<span class="val">"manuscritos"</span> <span class="attr">variant</span>=<span class="val">"light"</span>&gt;
+        &lt;<span class="tag">x-section-header</span>
+            <span class="attr">tag</span>=<span class="val">"Acervo"</span>
+            <span class="attr">title</span>=<span class="val">"Manuscritos Recentes"</span>
+            <span class="attr">link-text</span>=<span class="val">"Ver todos"</span>
+            <span class="attr">:link-href</span>=<span class="val">"route('manuscritos.index')"</span>
+        /&gt;
+        &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="val">"k-ms-grid"</span>&gt;
+            @foreach($manuscripts <span class="attr">as</span> $ms)
+                &lt;<span class="tag">x-manuscript-card</span>
+                    <span class="attr">:id</span>=<span class="val">"$ms->identifier"</span>
+                    <span class="attr">:title</span>=<span class="val">"$ms->title"</span>
+                    <span class="attr">:acervo</span>=<span class="val">"$ms->acervo->name"</span>
+                    <span class="attr">:href</span>=<span class="val">"route('manuscritos.show', $ms)"</span>
+                /&gt;
+            @endforeach
+        &lt;/<span class="tag">div</span>&gt;
+    &lt;/<span class="tag">x-section</span>&gt;
+
+&lt;/<span class="tag">x-layouts.app</span>&gt;</div>
+      </div>
+    </div>
+
+    <!-- BLADE LIST -->
+    <div class="doc-section" id="blade-list">
+      <h2 class="doc-section-title"><small>Laravel Blade</small>Componentes disponíveis</h2>
+      <table class="prop-table">
+        <thead><tr><th>Componente</th><th>Arquivo</th><th>Descrição</th></tr></thead>
+        <tbody>
+          <tr><td class="prop-name">&lt;x-nav&gt;</td><td class="prop-type">nav.blade.php</td><td>Navbar fixa com logo, links, CTA e menu mobile</td></tr>
+          <tr><td class="prop-name">&lt;x-hero&gt;</td><td class="prop-type">hero.blade.php</td><td>Seção hero full-screen com busca, filtros e stats</td></tr>
+          <tr><td class="prop-name">&lt;x-search-box&gt;</td><td class="prop-type">search-box.blade.php</td><td>Barra de busca (dark/light) com form Laravel</td></tr>
+          <tr><td class="prop-name">&lt;x-section&gt;</td><td class="prop-type">section.blade.php</td><td>Wrapper de seção com variantes de superfície</td></tr>
+          <tr><td class="prop-name">&lt;x-section-header&gt;</td><td class="prop-type">section-header.blade.php</td><td>Tag + título + link "ver todos"</td></tr>
+          <tr><td class="prop-name">&lt;x-page-header&gt;</td><td class="prop-type">page-header.blade.php</td><td>Header de páginas internas (não-hero)</td></tr>
+          <tr><td class="prop-name">&lt;x-manuscript-card&gt;</td><td class="prop-type">manuscript-card.blade.php</td><td>Card de manuscrito com imagem/placeholder</td></tr>
+          <tr><td class="prop-name">&lt;x-viewer&gt;</td><td class="prop-type">viewer.blade.php</td><td>Visualizador split-pane imagem + transcrição</td></tr>
+          <tr><td class="prop-name">&lt;x-timeline-event&gt;</td><td class="prop-type">timeline-event.blade.php</td><td>Card de evento na timeline</td></tr>
+          <tr><td class="prop-name">&lt;x-bio-card&gt;</td><td class="prop-type">bio-card.blade.php</td><td>Card de biografia (superfície escura)</td></tr>
+          <tr><td class="prop-name">&lt;x-badge&gt;</td><td class="prop-type">badge.blade.php</td><td>Tag pequena (default, gold, outline, parchment)</td></tr>
+          <tr><td class="prop-name">&lt;x-chip&gt;</td><td class="prop-type">chip.blade.php</td><td>Pill de filtro (dark/light, link ou button)</td></tr>
+          <tr><td class="prop-name">&lt;x-stat&gt;</td><td class="prop-type">stat.blade.php</td><td>Número grande + label</td></tr>
+          <tr><td class="prop-name">&lt;x-footer&gt;</td><td class="prop-type">footer.blade.php</td><td>Footer completo com colunas de links</td></tr>
+          <tr><td class="prop-name">&lt;x-mobile-nav&gt;</td><td class="prop-type">mobile-nav.blade.php</td><td>Navbar fixa bottom para mobile</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

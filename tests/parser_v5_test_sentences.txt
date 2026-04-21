@@ -1,0 +1,54 @@
+# Parser V5 Test Sentences
+# Lines starting with # are comments and will be ignored
+#
+# These sentences test various aspects of the V5 parser:
+# - Ghost node creation for implicit elements
+# - Token graph reconfiguration
+# - Construction matching at different levels
+# - MWE recognition
+# - Dependency link building
+
+# Simple sentences (SVO)
+O menino chegou
+A menina comeu
+Ele dormiu
+
+# Sentences with objects (SVO)
+O menino comeu o bolo
+A menina leu o livro
+Ele viu a casa
+
+# Sentences with modifiers
+O menino pequeno chegou
+A menina bonita comeu
+O cachorro grande dormiu
+
+# Sentences with prepositional phrases
+O menino chegou em casa
+A menina comeu com fome
+Ele dormiu na cama
+
+# Complex sentences with subordination
+O menino que chegou comeu
+A menina disse que dormiu
+Ele pensou que viu
+
+# Sentences that may trigger ghosts (implicit arguments)
+Chegou ontem
+Comeu muito
+Dormiu bem
+
+# Questions
+Quem chegou?
+O que comeu?
+Quando dormiu?
+
+# Negative sentences
+O menino não chegou
+A menina não comeu
+Ele não dormiu
+
+# Multi-word expressions (if in lexicon)
+O menino foi embora
+A menina de repente chegou
+Ele está de volta
