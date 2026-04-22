@@ -31,4 +31,8 @@ return [
         ],
     ],
 
+    'omeka' => [
+        'url' => env('OMEKA_URL', ''),
+    ],
+
 ];

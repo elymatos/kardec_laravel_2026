@@ -25,6 +25,7 @@
 --}}
 @props([
     'id'       => '',
+    'itemId'   => null,
     'title'    => '',
     'acervo'   => '',
     'year'     => null,
@@ -74,9 +75,14 @@
         {{-- Body --}}
         <div class="k-ms-card__body">
             @if($id)
-                <div class="k-ms-card__id">Nº&nbsp;{{ $id }}</div>
+                <div class="k-ms-card__id">{{ $id }}</div>
             @endif
-            <h3 class="k-ms-card__title">{{ $title }}</h3>
+            <h3 class="k-ms-card__title">
+                @if($itemId)
+                    <span class="k-ms-card__item-id">#{{ $itemId }}</span>
+                @endif
+                {{ $title }}
+            </h3>
             <div class="k-ms-card__meta">
                 @if($year)
                     <span class="k-ms-card__date">{{ $year }}</span>
