@@ -12,12 +12,15 @@ services:
     php: &laravel
         build:
             context: .
+            args:
+                PROD: 'true'
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         #        ports:
         #            - '${FORWARD_PHP_PORT}:8000'
         volumes:
             - '.:/www'
+            - vendor:/www/vendor
         #            - ./php.dev.ini:/usr/local/etc/php/conf.d/xdebug.ini
         #        command: php artisan serve --host=0.0.0.0
         user: 'sail'
@@ -37,3 +40,6 @@ services:
         image: redis:7.2-alpine
         ports:
             - '${FORWARD_REDIS_PORT}:6379'
+
+volumes:
+    vendor:
