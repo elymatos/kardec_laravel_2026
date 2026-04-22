@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Data\ContactData;
 use App\Services\AppService;
+use App\Services\DocumentService;
 use App\Services\WordpressService;
 use Collective\Annotations\Routing\Attributes\Attributes\Get;
 use Collective\Annotations\Routing\Attributes\Attributes\Middleware;
@@ -21,28 +22,47 @@ class AppController extends Controller
         debug(App::getLocale());
         $lang = AppService::getCurrentLanguageCode();
         App::setLocale($lang);
-        $manuscripts = DB::connection('kardec')
+        $rows = DB::connection('kardec')
             ->table('view_items')
             ->select('idItem', 'docIndex', 'ptTitle', 'frTitle', 'ptCollection', 'frCollection')
             ->where('public', 1)
             ->whereIn('idItemType', [20, 21])
             ->orderBy('dtUpdatedOrder', 'desc')
             ->limit(8)
-            ->get()
-            ->map(fn ($item) => (object) [
-                'idItem' => $item->idItem,
-                'identifier' => $item->docIndex,
-                'title' => $lang === 'fr' ? $item->frTitle : $item->ptTitle,
-                'acervo' => (object) ['name' => $lang === 'fr' ? $item->frCollection : $item->ptCollection],
-            ]);
+            ->get();
 
-        $viewerItem = (object) [
-            'identifier' => '108',
-            'acervo' => 'Acervo FEAL',
-            'year' => 'c. 1858',
-            'category' => 'Carta',
-            'excerpt' => 'Mon cher ami, je vous envoie ci-joint les réponses aux questions que vous m\'avez posées… <em>Les esprits sont partout</em>, ils constituent le monde invisible qui nous environne de toutes parts…',
-        ];
+        $itemIds = $rows->pluck('idItem')->all();
+
+        $thumbnails = DB::connection('kardec')
+            ->table('omeka_files')
+            ->select('item_id', 'filename')
+            ->whereIn('item_id', $itemIds)
+            ->where('has_derivative_image', 1)
+            ->where('mime_type', 'like', 'image%')
+            ->orderBy('id')
+            ->get()
+            ->unique('item_id')
+            ->keyBy('item_id');
+
+        $omekaUrl = config('services.omeka.url');
+
+        $manuscripts = $rows->map(fn ($item) => (object) [
+            'idItem'    => $item->idItem,
+            'identifier' => $item->docIndex,
+            'title'     => $lang === 'fr' ? $item->frTitle : $item->ptTitle,
+            'acervo'    => (object) ['name' => $lang === 'fr' ? $item->frCollection : $item->ptCollection],
+            'thumbnail' => isset($thumbnails[$item->idItem])
+                ? $omekaUrl . '/files/thumbnails/' . $thumbnails[$item->idItem]->filename
+                : null,
+        ]);
+
+        $lastPublicId = DB::connection('kardec')
+            ->table('view_items')
+            ->where('public', 1)
+            ->orderBy('idItem', 'desc')
+            ->value('idItem');
+
+        $viewerItem = $lastPublicId ? DocumentService::getItem((int) $lastPublicId, $lang) : null;
 
         $timelineCategories = collect([
             (object) ['label' => 'Cartas',            'color' => '#b8892a', 'left' => 0, 'width' => 45],

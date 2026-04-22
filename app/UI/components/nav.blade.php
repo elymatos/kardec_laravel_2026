@@ -36,7 +36,7 @@
     'searchHref' => null,
     'letter'     => 'K',
     'title'      => 'Projeto Allan Kardec',
-    'subtitle'   => 'UFJF — Acervo Digital',
+    'subtitle'   => 'Acervo Digital - UFJF',
 ])
 
 <nav
@@ -49,7 +49,7 @@
 
     {{-- Logo --}}
     <a href="/" class="k-nav__logo">
-        <span class="k-nav__logo-mark" aria-hidden="true">{{ $letter }}</span>
+{{--        <span class="k-nav__logo-mark" aria-hidden="true">{{ $letter }}</span>--}}
         <span class="k-nav__title">
             {{ $title }}
             @if($subtitle)

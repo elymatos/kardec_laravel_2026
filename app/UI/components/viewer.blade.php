@@ -28,6 +28,7 @@
     'metaAno'      => null,
     'metaCategory' => null,
     'imageAlt'     => 'Manuscrito original',
+    'maxChars'     => 0,
 ])
 
 @php
@@ -204,14 +205,21 @@
             </div>
         </div>
 
+        @php $textMaxHeight = $maxChars > 0 ? ((int)ceil($maxChars / 60) * 30) . 'px' : null; @endphp
         <div class="k-viewer__text-area">
-            <div class="k-viewer__text-content">
+            <div
+                class="k-viewer__text-content"
+                @if($textMaxHeight) style="max-height:{{ $textMaxHeight }};overflow:hidden;" @endif
+            >
                 @if(isset($transcript))
                     {{ $transcript }}
                 @else
                     <p><em>Transcrição não disponível para este documento.</em></p>
                 @endif
             </div>
+            @if($maxChars > 0)
+                <div class="k-viewer__text-fade" aria-hidden="true"></div>
+            @endif
         </div>
     </div>
 

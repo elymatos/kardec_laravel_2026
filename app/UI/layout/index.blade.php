@@ -130,9 +130,21 @@
     {{-- Body reveal + scroll reveal (no framework dependency) --}}
     <script>
         (function () {
-            // Reveal body once page is ready (anti-FOUC)
-            document.body.style.visibility = 'visible';
-            document.body.style.opacity = '1';
+            function revealBody() {
+                document.body.style.transition = 'opacity 0.25s ease';
+                document.body.style.visibility = 'visible';
+                document.body.style.opacity = '1';
+            }
+
+            // Wait for all resources (scripts, stylesheets) to finish loading
+            if (document.readyState === 'complete') {
+                revealBody();
+            } else {
+                window.addEventListener('load', revealBody);
+            }
+
+            // Fallback: reveal after 4 s so the page is never permanently hidden
+            setTimeout(revealBody, 4000);
 
             // Scroll reveal via IntersectionObserver
             const observer = new IntersectionObserver(
