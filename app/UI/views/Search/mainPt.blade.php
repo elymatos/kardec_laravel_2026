@@ -13,6 +13,7 @@
             hx-target="#results"
             hx-indicator="#search-spinner"
             style="display:flex;flex-direction:column;gap:var(--space-8);max-width:860px;"
+            @if(!empty($q)) x-data x-init="$nextTick(() => htmx.trigger($el, 'submit'))" @endif
         >
             @csrf
 
@@ -28,6 +29,7 @@
                         name="search"
                         class="k-search__input"
                         placeholder='ex: "carta" ou "O livro dos Espíritos"'
+                        value="{{ old('search', $q ?? '') }}"
                         autocomplete="off"
                         autocorrect="off"
                         spellcheck="false"

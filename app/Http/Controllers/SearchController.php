@@ -16,17 +16,18 @@ use Illuminate\Support\Facades\DB;
 class SearchController extends Controller
 {
     #[Get(path: '/pesquisar')]
-    public function search(): mixed
+    public function search(Request $request): mixed
     {
         $language = AppService::getCurrentLanguageCode();
 
         $collections = $this->fetchCollections();
         $tags = $this->fetchTags($language);
         $metadataTypes = $this->fetchMetadataTypes();
+        $q = $request->query('q', '');
 
         $view = $language === 'fr' ? 'Search.mainFr' : 'Search.mainPt';
 
-        return view($view, compact('collections', 'tags', 'metadataTypes'));
+        return view($view, compact('collections', 'tags', 'metadataTypes', 'q'));
     }
 
     #[Get(path: '/pesquisar/metadata/instancias')]

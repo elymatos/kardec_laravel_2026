@@ -119,14 +119,14 @@
     {{-- Right side: search icon + CTA + hamburger --}}
     <div style="display:flex;align-items:center;gap:0.5rem;">
 
-        @if($searchHref)
-            <a href="{{ $searchHref }}" class="k-nav__search-icon hide-tablet" aria-label="Pesquisar">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                    <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
-                    <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-            </a>
-        @endif
+{{--        @if($searchHref)--}}
+{{--            <a href="{{ $searchHref }}" class="k-nav__search-icon hide-tablet" aria-label="Pesquisar">--}}
+{{--                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">--}}
+{{--                    <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>--}}
+{{--                    <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>--}}
+{{--                </svg>--}}
+{{--            </a>--}}
+{{--        @endif--}}
 
         @if($ctaHref)
             <a href="{{ $ctaHref }}" class="k-nav__cta hide-tablet">
