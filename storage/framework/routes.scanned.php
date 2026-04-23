@@ -1,7 +1,10 @@
 <?php 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 $router->get('timeline', [
 	'uses' => 'App\Http\Controllers\TimelineController@timeline',
 	'as' => NULL,
@@ -162,6 +165,9 @@ $router->get('user/favorites', [
 	'domain' => NULL,
 ]);
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 $router->get('/', [
 	'uses' => 'App\Http\Controllers\AppController@main',
@@ -244,7 +250,10 @@ $router->get('changeLanguage/{language}', [
 ]);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 $router->get('components/fesByFrame', [
 	'uses' => 'App\Http\Controllers\ComponentsController@feCombobox',
 	'as' => NULL,
@@ -365,6 +374,9 @@ $router->get('logout', [
 	'domain' => NULL,
 ]);
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 $router->get('sandbox/page1', [
 	'uses' => 'App\Http\Controllers\SandboxController@page1',
@@ -383,7 +395,10 @@ $router->get('sandbox/page2', [
 ]);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 $router->get('biografias', [
 	'uses' => 'App\Http\Controllers\BiographyController@biografias',
 	'as' => NULL,
@@ -416,6 +431,9 @@ $router->get('biografias/item/{idItem}/citation', [
 	'domain' => NULL,
 ]);
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 $router->get('items', [
 	'uses' => 'App\Http\Controllers\ItemController@resource',
@@ -546,6 +564,7 @@ $router->delete('items/metadata/{idEntityRelation}', [
 ]);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 $router->get('timeline', [
 	'uses' => 'App\Http\Controllers\TimelineController@timeline',
 	'as' => NULL,
@@ -559,10 +578,13 @@ $router->post('timeline/update', [
 	'as' => NULL,
 	'middleware' => ['web'],
 =======
+=======
+>>>>>>> Stashed changes
 $router->get('empty', [
 	'uses' => 'App\Http\Controllers\Controller@empty',
 	'as' => NULL,
 	'middleware' => [],
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 	'where' => [],
 	'domain' => NULL,
@@ -868,6 +890,8 @@ $router->get('components/fesByFrame', [
 	'uses' => 'App\Http\Controllers\ComponentsController@feCombobox',
 	'as' => NULL,
 	'middleware' => ['web'],
+=======
+>>>>>>> Stashed changes
 	'where' => [],
 	'domain' => NULL,
 ]);
