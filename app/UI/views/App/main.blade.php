@@ -12,17 +12,17 @@
         </x-slot:search>
 
         <x-slot:filters>
-{{--            <x-chip label="Todos"        :active="true" />--}}
-{{--            <x-chip label="Cartas"       value="carta" />--}}
-{{--            <x-chip label="Dissertações" value="dissertacao" />--}}
-{{--            <x-chip label="Comunicações" value="comunicacao" />--}}
-{{--            <x-chip label="Notas"        value="nota" />--}}
-{{--            <x-chip label="Fragmentos"   value="fragmento" />--}}
+            {{--            <x-chip label="Todos"        :active="true" />--}}
+            {{--            <x-chip label="Cartas"       value="carta" />--}}
+            {{--            <x-chip label="Dissertações" value="dissertacao" />--}}
+            {{--            <x-chip label="Comunicações" value="comunicacao" />--}}
+            {{--            <x-chip label="Notas"        value="nota" />--}}
+            {{--            <x-chip label="Fragmentos"   value="fragmento" />--}}
         </x-slot:filters>
 
         <x-slot:stats>
-            <x-stat number="300+"      label="Manuscritos" />
-            <x-stat number="4"         label="Acervos" />
+            <x-stat number="300+" label="Manuscritos" />
+            <x-stat number="4" label="Acervos" />
             <x-stat number="1831–1873" label="Período" />
         </x-slot:stats>
     </x-hero>
@@ -114,13 +114,15 @@
                             :class="{ 'is-active': mode === 'original' }"
                             @click="setMode('original')"
                             type="button"
-                        >Original</button>
+                        >Original
+                        </button>
                         <button
                             class="k-btn k-btn--ghost-dark k-btn--sm"
                             :class="{ 'is-active': mode === 'translation' }"
                             @click="setMode('translation')"
                             type="button"
-                        >Tradução</button>
+                        >Tradução
+                        </button>
                     </x-slot:textActions>
 
                     <x-slot:transcript>
@@ -175,52 +177,52 @@
     </x-section>
 
     {{-- ── 4. TIMELINE ─────────────────────────────────────────────────────── --}}
-{{--    <x-section id="timeline" variant="parchment">--}}
-{{--        <x-section-header--}}
-{{--            tag="Cronologia"--}}
-{{--            title="Linha do Tempo"--}}
-{{--        />--}}
+    {{--    <x-section id="timeline" variant="parchment">--}}
+    {{--        <x-section-header--}}
+    {{--            tag="Cronologia"--}}
+    {{--            title="Linha do Tempo"--}}
+    {{--        />--}}
 
-{{--        <div class="k-timeline__bar-wrap reveal">--}}
-{{--            <div class="k-timeline__years" aria-hidden="true">--}}
-{{--                @foreach(['1800', '1820', '1840', '1860', '1869'] as $y)--}}
-{{--                    <span>{{ $y }}</span>--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--            <div class="k-timeline__track" aria-hidden="true">--}}
-{{--                @foreach($timelineCategories as $cat)--}}
-{{--                    <div--}}
-{{--                        class="k-timeline__segment"--}}
-{{--                        style="left:{{ $cat->left }}%;width:{{ $cat->width }}%;background:{{ $cat->color }};"--}}
-{{--                        title="{{ $cat->label }}"--}}
-{{--                    ></div>--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--            <div class="k-timeline__filters">--}}
-{{--                @foreach($timelineCategories as $cat)--}}
-{{--                    <x-chip--}}
-{{--                        :label="$cat->label"--}}
-{{--                        :dot-color="$cat->color"--}}
-{{--                        variant="light"--}}
-{{--                    />--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--        </div>--}}
+    {{--        <div class="k-timeline__bar-wrap reveal">--}}
+    {{--            <div class="k-timeline__years" aria-hidden="true">--}}
+    {{--                @foreach(['1800', '1820', '1840', '1860', '1869'] as $y)--}}
+    {{--                    <span>{{ $y }}</span>--}}
+    {{--                @endforeach--}}
+    {{--            </div>--}}
+    {{--            <div class="k-timeline__track" aria-hidden="true">--}}
+    {{--                @foreach($timelineCategories as $cat)--}}
+    {{--                    <div--}}
+    {{--                        class="k-timeline__segment"--}}
+    {{--                        style="left:{{ $cat->left }}%;width:{{ $cat->width }}%;background:{{ $cat->color }};"--}}
+    {{--                        title="{{ $cat->label }}"--}}
+    {{--                    ></div>--}}
+    {{--                @endforeach--}}
+    {{--            </div>--}}
+    {{--            <div class="k-timeline__filters">--}}
+    {{--                @foreach($timelineCategories as $cat)--}}
+    {{--                    <x-chip--}}
+    {{--                        :label="$cat->label"--}}
+    {{--                        :dot-color="$cat->color"--}}
+    {{--                        variant="light"--}}
+    {{--                    />--}}
+    {{--                @endforeach--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
 
-{{--        <div class="k-timeline__events">--}}
-{{--            @foreach($timelineEvents as $event)--}}
-{{--                <x-timeline-event--}}
-{{--                    :year="$event->year"--}}
-{{--                    :title="$event->title"--}}
-{{--                    :acervo="$event->acervo"--}}
-{{--                    :category="$event->category"--}}
-{{--                    :category-color="$event->color"--}}
-{{--                    @if($event->id) href="/item-pt?id={{ $event->id }}" @endif--}}
-{{--                    class="reveal"--}}
-{{--                />--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-{{--    </x-section>--}}
+    {{--        <div class="k-timeline__events">--}}
+    {{--            @foreach($timelineEvents as $event)--}}
+    {{--                <x-timeline-event--}}
+    {{--                    :year="$event->year"--}}
+    {{--                    :title="$event->title"--}}
+    {{--                    :acervo="$event->acervo"--}}
+    {{--                    :category="$event->category"--}}
+    {{--                    :category-color="$event->color"--}}
+    {{--                    @if($event->id) href="/item-pt?id={{ $event->id }}" @endif--}}
+    {{--                    class="reveal"--}}
+    {{--                />--}}
+    {{--            @endforeach--}}
+    {{--        </div>--}}
+    {{--    </x-section>--}}
 
     {{-- ── 5. ABOUT ─────────────────────────────────────────────────────────── --}}
     <x-section id="sobre" variant="light">
@@ -231,19 +233,23 @@
                     tag="O Projeto"
                     title="Allan Kardec &amp; os Manuscritos"
                 />
-                <p>Acervo digital de documentos manuscritos, transcrições e edições críticas reunidos por pesquisadores da Universidade Federal de Juiz de Fora, com apoio da FAPEMIG.</p>
-                <p>Os manuscritos compreendem cartas, dissertações, notas autógrafas e comunicações espíritas produzidos entre <strong>1800 e 1869</strong>, preservados em três acervos internacionais.</p>
-                <blockquote class="k-about__pull">
-                    "A caridade sem a fé pode existir, mas a fé sem a caridade é uma fé morta."
-                    <cite>— Allan Kardec</cite>
-                </blockquote>
+                <p>O Projeto Allan Kardec, que tem por principal objetivo permitir o acesso do público em geral e de
+                    pesquisadores a centenas de manuscritos e documentos originais de Allan Kardec, a maioria dos quais
+                    nunca haviam sido divulgados e editados.</p>
+                <p>O acervo digital, uma iniciativa da Universidade Federal de Juiz de Fora, com apoio da FAPEMIG,
+                    inclui cartas, dissertações, notas, comunicações espíritas e outros documentos, produzidos
+                    entre <strong>1831 e 1873</strong>.</p>
+                {{--                <blockquote class="k-about__pull">--}}
+                {{--                    "A caridade sem a fé pode existir, mas a fé sem a caridade é uma fé morta."--}}
+                {{--                    <cite>— Allan Kardec</cite>--}}
+                {{--                </blockquote>--}}
             </div>
 
             <aside class="k-about__side">
                 <div class="k-info-card reveal">
                     <p class="k-info-card__label">Categorias documentais</p>
                     <div class="k-info-card__content">
-                        Cartas · Dissertações · Notas autógrafas · Comunicações espíritas · Fragmentos · Obras publicadas
+                        Cartas · Dissertações · Notas · Comunicações espíritas · Discursos · Fragmentos · Impressos · Rascunhos
                     </div>
                 </div>
                 <div class="k-info-card reveal">
@@ -261,19 +267,29 @@
     {{-- ── 6. BIOGRAPHIES ──────────────────────────────────────────────────── --}}
     <x-section id="biografias" variant="dark">
         <x-section-header
-            tag="Equipe &amp; Biógrafos"
-            title="Pessoas Envolvidas"
+            tag="Equipe"
+            title="Colaboradores"
             :inverted="true"
         />
         <div class="k-bio-grid">
-            @foreach($biographies as $bio)
-                <x-bio-card
-                    :name="$bio->name"
-                    :role="$bio->role"
-                    href="/biografias"
-                    class="reveal"
-                />
-            @endforeach
+            <x-bio-card name="Adair Ribeiro" role="curador do Museu AKOL – AllanKardec.online" href="/biografias" class="reveal" />
+            <x-bio-card name="Alexander Moreira-Almeida" role="coordenação do projeto" href="/biografias" class="reveal" />
+            <x-bio-card name="Alexandre Caroli" role="revisão, transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Amanda Pestana" role="transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Angélica Almeida" role="preparação de biografias" href="/biografias" class="reveal" />
+            <x-bio-card name="Brutus Abel" role="coordenação da edição, transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Carlos Seth" role="revisão, contextualização e investigação de metadados" href="/biografias" class="reveal" />
+            <x-bio-card name="Charles Kempf" role="revisão e transcrição" href="/biografias" class="reveal" />
+            <x-bio-card name="Ely Matos" role="coordenação do projeto, desenvolvimento da plataforma digital" href="/biografias" class="reveal" />
+            <x-bio-card name="Fábio Fortes" role="revisão, transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Flávio de Carvalho" role="digitalização e indexação de manuscritos" href="/biografias" class="reveal" />
+            <x-bio-card name="Humberto Schubert" role="revisão" href="/biografias" class="reveal" />
+            <x-bio-card name="Igor Lopes" role="transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Isabela Monteiro" role="revisão, transcrição e tradução" href="/biografias" class="reveal" />
+            <x-bio-card name="Klaus Alberto" role="coordenação do projeto" href="/biografias" class="reveal" />
+            <x-bio-card name="Paulo de Figueiredo" role="direção do CDOR/FEAL" href="/biografias" class="reveal" />
+            <x-bio-card name="Philippe Gilbert" role="revisão e transcrição" href="/biografias" class="reveal" />
+            <x-bio-card name="Victor Saliba" role="revisão e transcrição" href="/biografias" class="reveal" />
         </div>
     </x-section>
 
