@@ -32,9 +32,9 @@ class OllamaTestCommand extends Command
         $this->info('🚀 Testing Ollama Integration...');
         $this->newLine();
 
-        $baseUrl = $this->option('base-url') ?? env('OLLAMA_BASE_URL', 'http://localhost:11434');
-        $model = $this->option('model') ?? env('OLLAMA_DEFAULT_MODEL', 'llama3.1:8b');
-        $timeout = (int) env('OLLAMA_TIMEOUT', 30);
+        $baseUrl = $this->option('base-url') ?? config('ollama.base_url');
+        $model = $this->option('model') ?? config('ollama.default_model');
+        $timeout = config('ollama.timeout');
 
         $this->info("Base URL: {$baseUrl}");
         $this->info("Using model: {$model}");
@@ -210,7 +210,7 @@ class OllamaTestCommand extends Command
         }
 
         $units = ['B', 'KB', 'MB', 'GB', 'TB'];
-        $i = floor(log($bytes, 1024));
+        $i = (int) floor(log($bytes, 1024));
 
         return round($bytes / pow(1024, $i), 2).' '.$units[$i];
     }
