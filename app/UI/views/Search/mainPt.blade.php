@@ -38,7 +38,7 @@
             </div>
 
             {{-- Filter row --}}
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-6);">
+            <div style="display:grid;grid-template-columns:1fr 1fr 2fr;gap:var(--space-6);">
 
 {{--                <div class="k-form-group">--}}
 {{--                    <label class="k-label" for="idItem">Identificador (ex: 108)</label>--}}
@@ -67,41 +67,39 @@
 
                 <div class="k-form-group">
                     <label class="k-label" for="metadataType">Metadado</label>
-                    <select
-                        class="k-select"
-                        id="metadataType"
-                        name="metadataType"
-                        hx-get="/pesquisar/metadata/instancias"
-                        hx-trigger="change"
-                        hx-target="#metadataInstanceId"
-                        hx-include="this"
-                        hx-swap="innerHTML"
-                    >
-                        @php
-                            $metadataLabels = [
-                                'author'    => 'Autor',
-                                'addressee' => 'Destinatário',
-                                'medium'    => 'Médium',
-                                'spirit'    => 'Espírito',
-                                'person'    => 'Pessoa citada',
-                                'origin'    => 'Origem',
-                                'place'     => 'Lugar',
-                                'book'      => 'Livro citado',
-                                'link'      => 'Link',
-                            ];
-                        @endphp
-                        <option value="">Todos</option>
-                        @foreach($metadataTypes as $mt)
-                            <option value="{{ $mt->nameType }}">{{ $metadataLabels[$mt->nameType] ?? $mt->nameType }}</option>
-                        @endforeach
-                    </select>
-                </div>
-
-                <div class="k-form-group">
-                    <label class="k-label" for="metadataInstanceId">Valor</label>
-                    <select class="k-select" id="metadataInstanceId" name="metadataInstanceId">
-                        <option value="">Todos</option>
-                    </select>
+                    <div style="display:flex;gap:var(--space-3);">
+                        <select
+                            class="k-select"
+                            id="metadataType"
+                            name="metadataType"
+                            hx-get="/pesquisar/metadata/instancias"
+                            hx-trigger="change"
+                            hx-target="#metadataInstanceId"
+                            hx-include="this"
+                            hx-swap="innerHTML"
+                        >
+                            @php
+                                $metadataLabels = [
+                                    'author'    => 'Autor',
+                                    'addressee' => 'Destinatário',
+                                    'medium'    => 'Médium',
+                                    'spirit'    => 'Espírito',
+                                    'person'    => 'Pessoa citada',
+                                    'origin'    => 'Origem',
+                                    'place'     => 'Lugar',
+                                    'book'      => 'Livro citado',
+                                    'link'      => 'Link',
+                                ];
+                            @endphp
+                            <option value="">Todos</option>
+                            @foreach($metadataTypes as $mt)
+                                <option value="{{ $mt->nameType }}">{{ $metadataLabels[$mt->nameType] ?? $mt->nameType }}</option>
+                            @endforeach
+                        </select>
+                        <select class="k-select" id="metadataInstanceId" name="metadataInstanceId">
+                            <option value="">Todos</option>
+                        </select>
+                    </div>
                 </div>
 
             </div>
