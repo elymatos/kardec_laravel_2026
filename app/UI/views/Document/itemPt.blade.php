@@ -38,35 +38,13 @@
             <div x-data="{
                 mode: 'original',
                 lang: 'pt',
-                loading: false,
-                cache: {},
+                cache: @js($item->translations),
 
-                setMode(m) {
-                    this.mode = m;
-                    if (m === 'translation' && this.lang !== 'pt' && !this.cache[this.lang]) {
-                        this.translate(this.lang);
-                    }
-                },
+                setMode(m) { this.mode = m; },
 
                 setLang(l) {
                     this.mode = 'translation';
-                    this.lang  = l;
-                    if (l !== 'pt' && !this.cache[l]) {
-                        this.translate(l);
-                    }
-                },
-
-                async translate(l) {
-                    this.loading = true;
-                    try {
-                        const res = await fetch('/item/{{ $item->idItem }}/translate/' + l);
-                        this.cache[l] = res.ok
-                            ? await res.text()
-                            : '<p><em>Tradução não disponível.</em></p>';
-                    } catch {
-                        this.cache[l] = '<p><em>Erro de conexão. Tente novamente.</em></p>';
-                    }
-                    this.loading = false;
+                    this.lang = l;
                 }
             }">
 
@@ -100,7 +78,7 @@
                         {{-- Language strip — slides in when in translation mode --}}
                         <div class="k-lang-strip" x-show="mode === 'translation'" x-cloak>
                             <div class="k-lang-strip__pills" role="tablist" aria-label="Idioma da tradução">
-                                @foreach(['pt'=>'PT','en'=>'EN','de'=>'DE','it'=>'IT','zh'=>'ZH','ja'=>'JA'] as $code => $label)
+                                @foreach(['pt'=>'Português','en'=>'Inglês','de'=>'Alemão','it'=>'Italiano','zh'=>'Chinês','ja'=>'Japonês'] as $code => $label)
                                     <button
                                         class="k-lang-pill"
                                         :class="{ 'is-active': lang === '{{ $code }}' }"
@@ -111,11 +89,7 @@
                                     >{{ $label }}</button>
                                 @endforeach
                             </div>
-                            <div class="k-lang-strip__status" x-show="loading" x-cloak>
-                                <span class="k-lang-spinner" aria-hidden="true"></span>
-                                <span>traduzindo…</span>
                             </div>
-                        </div>
 
                         {{-- Original transcription --}}
                         <div x-show="mode === 'original'">
@@ -135,19 +109,9 @@
                             @endif
                         </div>
 
-                        {{-- LLM translations: skeleton while loading, content when ready --}}
+                        {{-- DB translations for all non-PT languages --}}
                         <div x-show="mode === 'translation' && lang !== 'pt'" x-cloak>
-                            <div class="k-text-skeleton" x-show="loading">
-                                <div class="k-text-skeleton__line" style="width:91%"></div>
-                                <div class="k-text-skeleton__line" style="width:76%"></div>
-                                <div class="k-text-skeleton__line" style="width:84%"></div>
-                                <div class="k-text-skeleton__line" style="width:58%"></div>
-                                <div class="k-text-skeleton__line k-text-skeleton__line--gap" style="width:89%"></div>
-                                <div class="k-text-skeleton__line" style="width:70%"></div>
-                                <div class="k-text-skeleton__line" style="width:82%"></div>
-                                <div class="k-text-skeleton__line" style="width:63%"></div>
-                            </div>
-                            <div x-show="!loading" x-html="cache[lang] ?? ''"></div>
+                            <div x-html="cache[lang] || '<p><em style=\'color:var(--text-on-dark-muted);\'>Tradução não disponível.</em></p>'"></div>
                         </div>
 
                     </x-slot:transcript>

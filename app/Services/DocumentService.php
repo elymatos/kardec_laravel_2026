@@ -30,53 +30,63 @@ class DocumentService
 
     public static function getItem(int $idItem, string $lang = 'pt')
     {
-        $client = new Client([
-            'base_uri' => env('OMEKA_URL'),
-            'timeout' => 300.0,
-        ]);
         try {
-            $response = $client->request('GET', "items/get/{$idItem}?lang={$lang}");
-            $body = json_decode($response->getBody());
             $itemDb = Criteria::byId('view_items', 'idItem', $idItem);
-            // debug($body);
+            if (! $itemDb) {
+                return '';
+            }
+
+            $akItem = Criteria::byId('ak_item', 'idItem', $idItem);
+
             $item = (object) [
                 'idItem' => $idItem,
-                'translation' => $body->traducao,
-                'transcription' => $body->transcricao,
-                'around' => $body->around,
-                'tags' => $body->tags,
+                'transcription' => self::textToHtml($akItem?->txtTranscription ?? ''),
+                'around' => self::getAroundItems($idItem, $itemDb->docDateOrder, $lang),
+                'tags' => [],
             ];
-            if ($lang == 'pt') {
+
+            if ($lang === 'pt') {
+                $isAutoTranslation = empty($akItem?->txtTranslation) && ! empty($akItem?->txtPT);
+                $rawTranslation = ! empty($akItem?->txtTranslation)
+                    ? $akItem->txtTranslation
+                    : ($akItem?->txtPT ?? '');
+                $item->translation = $isAutoTranslation
+                    ? self::autoTranslationNote().self::textToHtml($rawTranslation)
+                    : self::textToHtml($rawTranslation);
                 $item->title = $itemDb->ptTitle;
                 $item->description = $itemDb->ptDescription;
                 $item->collection = $itemDb->ptCollection;
-                // snippets
-                $snippets = Criteria::table('ak_snippet')
-                    ->where('idItem', $idItem)
-                    ->all();
-                if (! empty($snippets)) {
-                    debug($snippets);
-                    foreach ($snippets as $snippet) {
-                        $links = '';
-                        if ($snippet->link1 != '') {
-                            $links .= "<a class='links' href='{$snippet->link1}' target='_blank'>Sinopse biográfica</a>";
-                        }
-                        if ($snippet->link2 != '') {
-                            $links .= "<a class='links' href='{$snippet->link2}' target='_blank'>Mais informações</a>";
-                        }
-                        $snippetContent = "<span class='ak-inline'>{$snippet->text}<span class='content'>{$snippet->snippet}<br>{$links}</span></span>";
-                        debug($snippetContent);
-                        $text = html_entity_decode(htmlspecialchars_decode($item->translation));
-                        $text = str_replace($snippet->text, $snippetContent, $text);
-                        $item->translation = $text;
+
+                $snippets = Criteria::table('ak_snippet')->where('idItem', $idItem)->all();
+                foreach ($snippets as $snippet) {
+                    $links = '';
+                    if ($snippet->link1 !== '') {
+                        $links .= "<a class='links' href='{$snippet->link1}' target='_blank'>Sinopse biográfica</a>";
                     }
+                    if ($snippet->link2 !== '') {
+                        $links .= "<a class='links' href='{$snippet->link2}' target='_blank'>Mais informações</a>";
+                    }
+                    $snippetContent = "<span class='ak-inline'>{$snippet->text}<span class='content'>{$snippet->snippet}<br>{$links}</span></span>";
+                    $item->translation = str_replace($snippet->text, $snippetContent, $item->translation);
                 }
             }
-            if ($lang == 'fr') {
+
+            if ($lang === 'fr') {
+                $item->translation = self::textToHtml($itemDb->translation ?? '');
                 $item->title = $itemDb->frTitle;
                 $item->description = $itemDb->frDescription;
                 $item->collection = $itemDb->frCollection;
             }
+
+            /** @var array<string,string> */
+            $item->translations = [
+                'en' => self::withAutoNote($akItem?->txtEN ?? ''),
+                'de' => self::withAutoNote($akItem?->txtDE ?? ''),
+                'it' => self::withAutoNote($akItem?->txtIT ?? ''),
+                'zh' => self::withAutoNote($akItem?->txtZH ?? ''),
+                'ja' => self::withAutoNote($akItem?->txtJP ?? ''),
+            ];
+
             $item->docIndex = $itemDb->docIndex;
             $item->dtPublished = $itemDb->dtPublished;
             $item->dtUpdated = $itemDb->dtUpdated;
@@ -95,6 +105,7 @@ class DocumentService
                 ->where('idItem', $idItem)
                 ->select('idTag', 'ptName', 'frName')
                 ->all();
+
             $user = AppService::getCurrentUser();
             if ($user) {
                 $idUser = $user->idUser;
@@ -107,13 +118,69 @@ class DocumentService
                 $item->isFavorite = false;
             }
 
-            // debug($item);
             return $item;
         } catch (\Exception $e) {
             debug($e->getMessage());
 
             return '';
         }
+    }
+
+    private static function autoTranslationNote(): string
+    {
+        return '<p class="text-amber-600 text-sm italic mb-3">⚠️ Este texto é uma tradução automática e pode conter erros e imprecisões.</p>';
+    }
+
+    private static function withAutoNote(string $text): string
+    {
+        $html = self::textToHtml($text);
+
+        return $html !== '' ? self::autoTranslationNote().$html : '';
+    }
+
+    private static function textToHtml(string $text): string
+    {
+        if ($text === '') {
+            return '';
+        }
+
+        $paragraphs = preg_split('/\n{2,}/', trim($text)) ?: [];
+        $html = '';
+
+        foreach ($paragraphs as $para) {
+            $para = trim($para);
+            if ($para !== '') {
+                $html .= '<p>'.nl2br(htmlspecialchars($para, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')).'</p>';
+            }
+        }
+
+        return $html;
+    }
+
+    /**
+     * @return array<int, object>
+     */
+    private static function getAroundItems(int $idItem, ?string $docDateOrder, string $lang): array
+    {
+        if (! $docDateOrder) {
+            return [];
+        }
+
+        $titleCol = $lang === 'fr' ? 'frTitle' : 'ptTitle';
+
+        $rows = Criteria::table('view_items')
+            ->where('idItem', '!=', $idItem)
+            ->whereNotNull('docDateOrder')
+            ->orderByRaw('ABS(CAST(docDateOrder AS SIGNED) - CAST(? AS SIGNED))', [$docDateOrder])
+            ->select('idItem', 'docDate', $titleCol)
+            ->limit(10)
+            ->all();
+
+        return array_map(fn ($row) => (object) [
+            'id' => $row->idItem,
+            'date' => $row->docDate,
+            'title' => $row->{$titleCol},
+        ], $rows);
     }
 
     public static function getItemFiles(int $idItem)
