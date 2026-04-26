@@ -25,6 +25,7 @@ class OllamaTranslateItemsCommand extends Command
         'txtEN' => 'English',
         'txtDE' => 'German',
         'txtIT' => 'Italian',
+        'txtES' => 'Spanish',
         'txtZH' => 'Chinese',
         'txtJP' => 'Japanese',
     ];
@@ -138,9 +139,9 @@ class OllamaTranslateItemsCommand extends Command
         $result = [];
 
         foreach ($requested as $code) {
-            $column = 'txt'.ucfirst(strtolower($code));
+            $column = 'txt'.strtoupper($code);
             if (! isset($this->languages[$column])) {
-                $this->error("Unknown language code: {$code}. Valid: PT, EN, DE, IT, ZH, JP");
+                $this->error("Unknown language code: {$code}. Valid: PT, EN, DE, IT, ES, ZH, JP");
 
                 return null;
             }

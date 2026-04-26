@@ -1,55 +1,31 @@
 <?php 
 
-$router->get('timeline', [
-	'uses' => 'App\Http\Controllers\TimelineController@timeline',
+$router->get('pesquisar', [
+	'uses' => 'App\Http\Controllers\SearchController@search',
 	'as' => NULL,
 	'middleware' => ['web'],
 	'where' => [],
 	'domain' => NULL,
 ]);
 
-$router->post('timeline/update', [
-	'uses' => 'App\Http\Controllers\TimelineController@timelineUpdate',
+$router->get('pesquisar/metadata/instancias', [
+	'uses' => 'App\Http\Controllers\SearchController@metadataInstances',
 	'as' => NULL,
 	'middleware' => ['web'],
 	'where' => [],
 	'domain' => NULL,
 ]);
 
-$router->get('item-pt', [
-	'uses' => 'App\Http\Controllers\DocumentController@itemPt',
+$router->post('pesquisar', [
+	'uses' => 'App\Http\Controllers\SearchController@searchBy',
 	'as' => NULL,
 	'middleware' => ['web'],
 	'where' => [],
 	'domain' => NULL,
 ]);
 
-$router->get('item-fr', [
-	'uses' => 'App\Http\Controllers\DocumentController@itemFr',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->post('favorite', [
-	'uses' => 'App\Http\Controllers\DocumentController@favorite',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('item/{idItem}/translate/{lang}', [
-	'uses' => 'App\Http\Controllers\DocumentController@translate',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('item/{idItem}/citation', [
-	'uses' => 'App\Http\Controllers\DocumentController@citation',
+$router->get('components/fesByFrame', [
+	'uses' => 'App\Http\Controllers\ComponentsController@feCombobox',
 	'as' => NULL,
 	'middleware' => ['web'],
 	'where' => [],
@@ -160,6 +136,182 @@ $router->get('user/favorites', [
 	'domain' => NULL,
 ]);
 
+$router->get('item-pt', [
+	'uses' => 'App\Http\Controllers\DocumentController@itemPt',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('item-fr', [
+	'uses' => 'App\Http\Controllers\DocumentController@itemFr',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->post('favorite', [
+	'uses' => 'App\Http\Controllers\DocumentController@favorite',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('item/{idItem}/translate/{lang}', [
+	'uses' => 'App\Http\Controllers\DocumentController@translate',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('item/{idItem}/citation', [
+	'uses' => 'App\Http\Controllers\DocumentController@citation',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('sandbox/page1', [
+	'uses' => 'App\Http\Controllers\SandboxController@page1',
+	'as' => NULL,
+	'middleware' => ['auth'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('sandbox/page2', [
+	'uses' => 'App\Http\Controllers\SandboxController@page2',
+	'as' => NULL,
+	'middleware' => ['auth'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('acesso/recente', [
+	'uses' => 'App\Http\Controllers\AccessController@accessRecent',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('acesso/ano', [
+	'uses' => 'App\Http\Controllers\AccessController@accessYear',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('acesso/categoria', [
+	'uses' => 'App\Http\Controllers\AccessController@accessCategory',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('acesso/acervo', [
+	'uses' => 'App\Http\Controllers\AccessController@accessCollection',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('acesso/id', [
+	'uses' => 'App\Http\Controllers\AccessController@accessId',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('biografias', [
+	'uses' => 'App\Http\Controllers\BiographyController@biografias',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('biografias/item/{idItem}', [
+	'uses' => 'App\Http\Controllers\BiographyController@itemBiografia',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('biografias/item/{idItem}/fragment', [
+	'uses' => 'App\Http\Controllers\BiographyController@fragmentBiografia',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('biografias/item/{idItem}/citation', [
+	'uses' => 'App\Http\Controllers\BiographyController@citation',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('auth0Callback', [
+	'uses' => 'App\Http\Controllers\LoginController@auth0Callback',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('auth0Login', [
+	'uses' => 'App\Http\Controllers\LoginController@auth0Login',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->post('login', [
+	'uses' => 'App\Http\Controllers\LoginController@login',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('login-error', [
+	'uses' => 'App\Http\Controllers\LoginController@loginError',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('logout', [
+	'uses' => 'App\Http\Controllers\LoginController@logout',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('empty', [
+	'uses' => 'App\Http\Controllers\Controller@empty',
+	'as' => NULL,
+	'middleware' => [],
+	'where' => [],
+	'domain' => NULL,
+]);
+
 $router->get('/', [
 	'uses' => 'App\Http\Controllers\AppController@main',
 	'as' => NULL,
@@ -234,174 +386,6 @@ $router->post('contato', [
 
 $router->get('changeLanguage/{language}', [
 	'uses' => 'App\Http\Controllers\AppController@changeLanguage',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('components/fesByFrame', [
-	'uses' => 'App\Http\Controllers\ComponentsController@feCombobox',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('acesso/recente', [
-	'uses' => 'App\Http\Controllers\AccessController@accessRecent',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('acesso/ano', [
-	'uses' => 'App\Http\Controllers\AccessController@accessYear',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('acesso/categoria', [
-	'uses' => 'App\Http\Controllers\AccessController@accessCategory',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('acesso/acervo', [
-	'uses' => 'App\Http\Controllers\AccessController@accessCollection',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('acesso/id', [
-	'uses' => 'App\Http\Controllers\AccessController@accessId',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('imagens', [
-	'uses' => 'App\Http\Controllers\ImagesController@accessRecent',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('pesquisar', [
-	'uses' => 'App\Http\Controllers\SearchController@search',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('pesquisar/metadata/instancias', [
-	'uses' => 'App\Http\Controllers\SearchController@metadataInstances',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->post('pesquisar', [
-	'uses' => 'App\Http\Controllers\SearchController@searchBy',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('auth0Callback', [
-	'uses' => 'App\Http\Controllers\LoginController@auth0Callback',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('auth0Login', [
-	'uses' => 'App\Http\Controllers\LoginController@auth0Login',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->post('login', [
-	'uses' => 'App\Http\Controllers\LoginController@login',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('login-error', [
-	'uses' => 'App\Http\Controllers\LoginController@loginError',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('logout', [
-	'uses' => 'App\Http\Controllers\LoginController@logout',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('sandbox/page1', [
-	'uses' => 'App\Http\Controllers\SandboxController@page1',
-	'as' => NULL,
-	'middleware' => ['auth'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('sandbox/page2', [
-	'uses' => 'App\Http\Controllers\SandboxController@page2',
-	'as' => NULL,
-	'middleware' => ['auth'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('biografias', [
-	'uses' => 'App\Http\Controllers\BiographyController@biografias',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('biografias/item/{idItem}', [
-	'uses' => 'App\Http\Controllers\BiographyController@itemBiografia',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('biografias/item/{idItem}/fragment', [
-	'uses' => 'App\Http\Controllers\BiographyController@fragmentBiografia',
-	'as' => NULL,
-	'middleware' => ['web'],
-	'where' => [],
-	'domain' => NULL,
-]);
-
-$router->get('biografias/item/{idItem}/citation', [
-	'uses' => 'App\Http\Controllers\BiographyController@citation',
 	'as' => NULL,
 	'middleware' => ['web'],
 	'where' => [],
@@ -536,10 +520,26 @@ $router->delete('items/metadata/{idEntityRelation}', [
 	'domain' => NULL,
 ]);
 
-$router->get('empty', [
-	'uses' => 'App\Http\Controllers\Controller@empty',
+$router->get('imagens', [
+	'uses' => 'App\Http\Controllers\ImagesController@accessRecent',
 	'as' => NULL,
-	'middleware' => [],
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->get('timeline', [
+	'uses' => 'App\Http\Controllers\TimelineController@timeline',
+	'as' => NULL,
+	'middleware' => ['web'],
+	'where' => [],
+	'domain' => NULL,
+]);
+
+$router->post('timeline/update', [
+	'uses' => 'App\Http\Controllers\TimelineController@timelineUpdate',
+	'as' => NULL,
+	'middleware' => ['web'],
 	'where' => [],
 	'domain' => NULL,
 ]);
